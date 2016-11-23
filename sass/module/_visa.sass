@@ -21,6 +21,9 @@
 	font-size: 12px
 	margin-top: 10px
 	font-family: 'LatoWeb'
+	ul
+		margin-left: 20px
+
 .visa-form-help__icons
 	margin-top: 10px
 	.ico
@@ -41,6 +44,19 @@
 		background-image: url("../img/ico-pricing-podacha-white.svg")
 	.ico-pricing-sbor
 		background-image: url("../img/ico-pricing-sbor-white.svg")
+	.visa-form-help__icon-row
+		margin-bottom: 5px
+		position: relative
+		.ico
+			position: absolute
+			top: 50%
+			@include transform(translateY(-50%))
+			left: 0
+		span
+			font-size: 12px
+			font-family: 'LatoWeb'
+			padding-left: 30px
+			display: inline-block
 
 .visa-form-choicen
 	padding: 25px
@@ -51,6 +67,10 @@
 	font-size: 20px
 	margin-top: 10px
 	text-align: center
+	&.left
+		color: white
+		text-align: left
+		margin-bottom: 10px
 
 
 // VISA STEP 2
@@ -183,4 +203,35 @@
 	width: 31px
 	height: 31px
 	margin-left: 10px
+
+
+// STEP 3
+
+.green-sidebar--visa-step3
+	.visa-form-help
+		padding-left: 15px
+	.visa-form-choicen__price
+		padding-left: 15px
+		margin-top: -3px
+	.visa-form-help
+		margin-bottom: 25px
+		&:last-child
+			margin-bottom: 0
+
+.visa3-delivery
+	.col-sm-5
+		text-align: right
+		@include mq($until: tablet)
+			text-align: left
+
+// спрятать девалтные табы на 3-ем шаге
+.togle-visaDelivery--type2, .togle-visaDelivery--type3, .togle-visaDelivery--type4
+	display: none
+	label
+		display: block
+
+.togle-visaDelivery--type1
+	display: block
+
+
 

@@ -812,55 +812,263 @@
 			</div>
 		</div>
 
-		<div id="section-calculator--step3" class="row mt60 regular-input" style="position: relative">
+		<div id="section-calculator--step3" class="row mt10 regular-input" style="position: relative">
 
 			<div class="col-sm-8">
 				<div class="heading">Как вы хотите получить визу ? </div>
 
-				<div class="form-group">
+				<div class="form-group visa3-delivery">
 					<label>Выберите тип доставки</label>
 					<div class="row radio-buttons">
-						<div class="col-sm-6">
+						<div class="col-sm-7">
 							<div class="radio-buttons__block">
 								<div class="radio-buttons__btn active">
-									<input type="radio" name="delivery_office" id="delivery_office_1" checked>
-									<label for="delivery_office_1"><span>Доставкой по Санкт-Петербургу</span></label>
+									<input type="radio" name="delivery_type" id="delivery_type_1" checked>
+									<label for="delivery_type_1"><span>Доставкой по Санкт-Петербургу</span></label>
 								</div>
 							</div>
 							<div class="radio-buttons__block">
 								<div class="radio-buttons__btn">
-									<input type="radio" name="delivery_office" id="delivery_office_3">
-									<label for="delivery_office_3"><span>Доставкой в другой город</span></label>
+									<input type="radio" name="delivery_type" id="delivery_type_2">
+									<label for="delivery_type_2"><span>Доставкой в другой город</span></label>
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-sm-5">
 							<div class="radio-buttons__block">
 								<div class="radio-buttons__btn">
-									<input type="radio" name="delivery_office" id="delivery_office_2">
-									<label for="delivery_office_2"><span>Заберу в офисе</span></label>
+									<input type="radio" name="delivery_type" id="delivery_type_3">
+									<label for="delivery_type_3"><span>Заберу в офисе</span></label>
 								</div>
 							</div>
 							<div class="radio-buttons__block">
 								<div class="radio-buttons__btn">
-									<input type="radio" name="delivery_office" id="delivery_office_4">
-									<label for="delivery_office_4"><span>Получить по E-mail</span></label>
+									<input type="radio" name="delivery_type" id="delivery_type_4">
+									<label for="delivery_type_4"><span>Получить по E-mail</span></label>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="form-group">
+					<div class="togle-visaDelivery--type1">
 						<div class="form-group">
 							<label>Адрес доставки</label>
 							<input type="text" class="calculator__form__input left-icon calculator__form__contacts__input--ico-loc" id="" name="" placeholder="125525, Санкт-Питербург, ул. Строителей, дом 5 кв. 124">
 						</div>
 					</div>
+					<!-- Зависит от выбора чекбокса -->
+					<div class="togle-visaDelivery--type2">
+						<div class="form-group">
+							<label>Город и регион</label>
+							<input type="text" class="calculator__form__input calculator__form__input--w50 left-icon calculator__form__contacts__input--ico-loc" id="" name="" placeholder="Балашиха, Московская область ">
+						</div>
+						<div class="form-group">
+							<label>Адрес</label>
+							<input type="text" class="calculator__form__input left-icon calculator__form__contacts__input--ico-loc" id="" name="" placeholder="ул. Строителей, дом 5 кв. 124">
+						</div>
+					</div>
+					<!-- Зависит от выбора чекбокса -->
+					<div class="togle-visaDelivery--type3">
+						<div class="row">
+							<div class="col-sm-8">
+								<div class="form-group">
+									<label>В каком офисе ?</label>
+									<div class="radio-buttons">
+										<div class="radio-buttons__block">
+											<div class="radio-buttons__btn active">
+												<input type="radio" name="delivery_office" id="delivery_office_1" checked>
+												<label for="delivery_office_1"><span>проспект Стачек д.55</span></label>
+											</div>
+										</div>
+										<div class="radio-buttons__block">
+											<div class="radio-buttons__btn">
+												<input type="radio" name="delivery_office" id="delivery_office_2">
+												<label for="delivery_office_2"><span>Торф. дорога д. 2, корп 1, ТК «Старая Деревня»</span></label>
+											</div>
+										</div>
+										<div class="radio-buttons__block">
+											<div class="radio-buttons__btn">
+												<input type="radio" name="delivery_office" id="delivery_office_3">
+												<label for="delivery_office_3"><span>пр.Энгельса 124 к1 ТК ВОЯЖ <br> 3 вход, 2 этаж, секция 2.21</span></label>
+											</div>
+										</div>
+										<div class="radio-buttons__block">
+											<div class="radio-buttons__btn">
+												<input type="radio" name="delivery_office" id="delivery_office_4">
+												<label for="delivery_office_4"><span>ул. Ленсовета д.87</span></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div id="map" class="map mt35" style="height: 230px;"></div>
+		<script type="text/javascript">
+		$(document).ready(function(){
 
+			ymaps.ready(init);
+				function init () {
+					var myMap = new ymaps.Map("map", {
+			            center: [59.9182,30.3056],
+			            zoom: 9,
+			            controls: ['zoomControl'],
+						
+			        }); 
+
+					var myGeoObjects = [];
+						myGeoObjects[0] = new ymaps.Placemark([59.8796,30.2620],{
+			                clusterCaption: 'Метро "Кировский завод"', 
+			                //balloonContentBody: 'Текст в балуне',
+			                },{
+			                // Необходимо указать данный тип макета.
+			                iconLayout: 'default#image',
+			                iconImageHref: 'img/ya-maps/1c.png',
+			                // Размеры метки.
+			                iconImageSize: [46, 30],
+			                // Смещение левого верхнего угла иконки относительно
+			                // её «ножки» (точки привязки).
+			                iconImageOffset: [-3, -42]
+			            });
+			        
+						myGeoObjects[1] = new ymaps.Placemark([59.9893,30.2552],{
+							clusterCaption: 'Метро "Старая деревня"', 
+							//balloonContentBody: 'Текст в балуне',
+							},{
+							// Необходимо указать данный тип макета.
+							iconLayout: 'default#image',
+							iconImageHref: 'img/ya-maps/2c.png',
+							// Размеры метки.
+							iconImageSize: [46, 30],
+							// Смещение левого верхнего угла иконки относительно
+							// её «ножки» (точки привязки).
+							iconImageOffset: [-3, -42]
+			            });
+			        
+						myGeoObjects[2] = new ymaps.Placemark([59.8332,30.3493],{
+			                clusterCaption: ' Метро "Звёздная"', 
+							//balloonContentBody: 'Текст в балуне',
+			                },{
+			                // Необходимо указать данный тип макета.
+			                iconLayout: 'default#image',
+			                iconImageHref: 'img/ya-maps/3c.png',
+			                // Размеры метки.
+			                iconImageSize: [46, 30],
+			                // Смещение левого верхнего угла иконки относительно
+			                // её «ножки» (точки привязки).
+			                iconImageOffset: [-16, -42]
+			            });
+						
+						myGeoObjects[3] = new ymaps.Placemark([60.0372,30.3218],{
+			                clusterCaption: 'Метро "Озерки"', 
+							//balloonContentBody: 'Текст в балуне',
+			                },{
+			                // Необходимо указать данный тип макета.
+			                iconLayout: 'default#image',
+			                iconImageHref: 'img/ya-maps/4c.png',
+			                // Размеры метки.
+			                iconImageSize: [46, 30],
+			                // Смещение левого верхнего угла иконки относительно
+			                // её «ножки» (точки привязки).
+			                iconImageOffset: [-16, -42]
+			            });
+						
+						myGeoObjects[4] = new ymaps.Placemark([55.7613,37.6630],{
+			                clusterCaption: 'Нижний Сусальный переулок дом 5', 
+							//balloonContentBody: 'Текст в балуне',
+			                },{
+			                // Необходимо указать данный тип макета.
+			                iconLayout: 'default#image',
+			                iconImageHref: 'img/ya-maps/4c.png',
+			                // Размеры метки.
+			                iconImageSize: [46, 30],
+			                // Смещение левого верхнего угла иконки относительно
+			                // её «ножки» (точки привязки).
+			                iconImageOffset: [-16, -42]
+			            });
+			        
+						var clusterIcons=[{
+								href:'/images/pointer.png',
+								size:[31,40],
+								offset:[0,0]
+						}];
+			        
+						var clusterer = new ymaps.Clusterer({
+							clusterDisableClickZoom: false,
+							clusterOpenBalloonOnClick: false,
+							// Устанавливаем стандартный макет балуна кластера "Карусель".
+							clusterBalloonContentLayout: 'cluster#balloonCarousel',
+							// Устанавливаем собственный макет.
+							//clusterBalloonItemContentLayout: customItemContentLayout,
+							// Устанавливаем режим открытия балуна. 
+							// В данном примере балун никогда не будет открываться в режиме панели.
+							clusterBalloonPanelMaxMapArea: 0,
+							// Устанавливаем размеры макета контента балуна (в пикселях).
+							clusterBalloonContentLayoutWidth: 300,
+							clusterBalloonContentLayoutHeight: 200,
+							// Устанавливаем максимальное количество элементов в нижней панели на одной странице
+							clusterBalloonPagerSize: 5
+							// Настройка внешего вида нижней панели.
+							// Режим marker рекомендуется использовать с небольшим количеством элементов.
+							// clusterBalloonPagerType: 'marker',
+							// Можно отключить зацикливание списка при навигации при помощи боковых стрелок.
+							// clusterBalloonCycling: false,
+							// Можно отключить отображение меню навигации.
+							// clusterBalloonPagerVisible: false
+						});
+
+				clusterer.add(myGeoObjects);
+				myMap.geoObjects.add(clusterer);
+				myMap.behaviors.disable('scrollZoom');
+			}
+		});
+		</script>
+							</div>
+						</div>
+					</div>
+					<!-- Зависит от выбора чекбокса -->
+					<div class="togle-visaDelivery--type4">
+						<div class="form-group">
+							<label>Ваш email</label>
+							<input type="text" class="calculator__form__input calculator__form__input--w50 left-icon calculator__form__contacts__input--ico-email" placeholder="ivan.pupkin@mail.ru">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- SIDEBAR -->
+			<div class="col-sm-4 green-sidebar green-sidebar--visa-step3 no-pad-top">
+
+				<div class="visa-form-choicen__price left">4725.73 Р</div>
+
+				<div class="visa-form-help">
+					<div class="visa-form-help__name">Полное оформление визы</div>
+					<div class="visa-form-help__desc">
+						<ul>
+							<li>Подать и получить документы за вас</li>
+							<li>Оплатить консульский и сервисный сборы</li>
+							<li>Записать на сканирование отпечатков пальцев</li>
+						</ul>
+					</div>
+				</div>
+				<div class="visa-form-help">
+					<div class="visa-form-help__name">В стоимость включено</div>
+					<div class="visa-form-help__icons">
+						<div class="visa-form-help__icon-row">
+							<i class="ico ico-pricing-sbor"></i>
+							<span>Консульский и сервисный сборы</span>
+						</div>
+						<div class="visa-form-help__icon-row">
+							<i class="ico ico-pricing-photo"></i>
+							<span>Фотография</span>
+						</div>
+						<div class="visa-form-help__icon-row">
+							<i class="ico ico-pricing-insurance"></i>
+							<span>Страховка на 30 дней</span>
+						</div>
+					</div>
 				</div>
 
 			</div>
-
 		</div>
 
 

@@ -53,5 +53,32 @@ $(document).ready(function(){
 	// и накидываем datarange на селект
 	// вызов в main.js чтобы не засорять повторным вызовом локаля
 
+
+	// ТРЕТЬИЙ ШАГ (доставка)
+	$('.visa3-delivery input[name=delivery_type]').on('change', function(){
+
+		if ( $('#delivery_type_1').is(':checked') ){
+			console.log('Выбран доставкой по СБП');
+			$('.togle-visaDelivery--type2').hide();
+			$('.togle-visaDelivery--type3').hide();
+			$('.togle-visaDelivery--type4').hide();
+			$('.togle-visaDelivery--type1').fadeIn('600');
+		} else if ( $('#delivery_type_2').is(':checked') ) {
+			$('.togle-visaDelivery--type1').hide();
+			$('.togle-visaDelivery--type3').hide();
+			$('.togle-visaDelivery--type4').hide();
+			$('.togle-visaDelivery--type2').fadeIn('600');
+		} else if ( $('#delivery_type_3').is(':checked') ) {
+			$('.togle-visaDelivery--type1').hide();
+			$('.togle-visaDelivery--type2').hide();
+			$('.togle-visaDelivery--type4').hide();
+			$('.togle-visaDelivery--type3').fadeIn('600');
+		} else if ( ( $('#delivery_type_4').is(':checked') ) ) {
+			$('.togle-visaDelivery--type1').hide();
+			$('.togle-visaDelivery--type2').hide();
+			$('.togle-visaDelivery--type3').hide();
+			$('.togle-visaDelivery--type4').fadeIn('600');
+		}
+	});
 	
 });

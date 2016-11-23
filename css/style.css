@@ -4227,8 +4227,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   left: 0; }
 .regular-input label {
   font-size: 16px;
-  color: white;
-  margin-bottom: 7px; }
+  color: white; }
 .regular-input .calculator__form__input--ico-car {
   background-position: 95% center; }
   .regular-input .calculator__form__input--ico-car.left-icon {
@@ -5167,6 +5166,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   font-size: 12px;
   margin-top: 10px;
   font-family: "LatoWeb"; }
+  .visa-form-help__desc ul {
+    margin-left: 20px; }
 
 .visa-form-help__icons {
   margin-top: 10px; }
@@ -5188,6 +5189,23 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     background-image: url("../img/ico-pricing-podacha-white.svg"); }
   .visa-form-help__icons .ico-pricing-sbor {
     background-image: url("../img/ico-pricing-sbor-white.svg"); }
+  .visa-form-help__icons .visa-form-help__icon-row {
+    margin-bottom: 5px;
+    position: relative; }
+    .visa-form-help__icons .visa-form-help__icon-row .ico {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      left: 0; }
+    .visa-form-help__icons .visa-form-help__icon-row span {
+      font-size: 12px;
+      font-family: "LatoWeb";
+      padding-left: 30px;
+      display: inline-block; }
 
 .visa-form-choicen {
   padding: 25px;
@@ -5199,6 +5217,10 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   font-size: 20px;
   margin-top: 10px;
   text-align: center; }
+  .visa-form-choicen__price.left {
+    color: white;
+    text-align: left;
+    margin-bottom: 10px; }
 
 .visa__tabs {
   float: left;
@@ -5327,6 +5349,30 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   width: 31px;
   height: 31px;
   margin-left: 10px; }
+
+.green-sidebar--visa-step3 .visa-form-help {
+  padding-left: 15px; }
+.green-sidebar--visa-step3 .visa-form-choicen__price {
+  padding-left: 15px;
+  margin-top: -3px; }
+.green-sidebar--visa-step3 .visa-form-help {
+  margin-bottom: 25px; }
+  .green-sidebar--visa-step3 .visa-form-help:last-child {
+    margin-bottom: 0; }
+
+.visa3-delivery .col-sm-5 {
+  text-align: right; }
+  @media (max-width: 47.99em) {
+    .visa3-delivery .col-sm-5 {
+      text-align: left; } }
+
+.togle-visaDelivery--type2, .togle-visaDelivery--type3, .togle-visaDelivery--type4 {
+  display: none; }
+  .togle-visaDelivery--type2 label, .togle-visaDelivery--type3 label, .togle-visaDelivery--type4 label {
+    display: block; }
+
+.togle-visaDelivery--type1 {
+  display: block; }
 
 .calculator__form__price__benefit {
   color: white;
