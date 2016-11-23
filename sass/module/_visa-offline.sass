@@ -3,23 +3,34 @@
 .main-slider__countries
 	text-align: left
 	margin-top: 35px
+	@include mq($until: tablet)
+		margin-top: 20px
+		margin-bottom: 20px
 
 .main-slider__country
 	display: block
-	padding: 10px 0px
+	padding: 20px 0px
 	border-bottom: 1px solid $borderColor
 	font-size: 22px
+	position: relative
 	@include transition(all .4s ease)
+	@include mq($until: wide)
+		font-size: 18px
+	@include mq($until: desktop)
+		font-size: 16px
+		padding: 15px 0
+
 	&:last-child
 		border-bottom: none
+		@include mq($until: tablet)
+			border-bottom: 1px solid $borderColor
 	&:visited, &:active, &:focus
 		text-decoration: none
 	&:hover
 		color: $blue
 		background: rgba(white, .5)
-		padding-left: 5px
 		.ico
-			margin-right: 10px
+			left: 5px
 	.ico
 		@include box-shadow(1px,1px,6px,rgba(black, .25))
 		width: 40px
@@ -28,9 +39,23 @@
 		background-repeat: none
 		background-position: center
 		border-radius: 50%
+		position: absolute
+		top: 50%
+		left: 0
+		@include transform(translateY(-50%))
 		@include transition(all .4s ease)
+		@include mq($until: desktop)
+			width: 30px
+			height: 30px
+			background-size: cover
 	span
-		vertical-align: 10px
+		vertical-align: 0px
+		display: inline-block
+		padding-left: 60px
+		@include mq($until: wide)
+			padding-left: 55px
+		@include mq($until: desktop)
+			padding-left: 45px
 
 .ico-finland
 	background-image: url('../img/ico-co-finland.svg')

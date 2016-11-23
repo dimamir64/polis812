@@ -44,6 +44,9 @@
 				width: 35px
 				height: 3px
 
+	.text-right
+		@include mq($until: tablet)
+			text-align: left
 	
 .main-slider__image
 	min-height: 400px
@@ -52,9 +55,14 @@
 		bottom: 0
 		left: 50%
 		@include transform(translateX(-50%))
+
 	&.offset-bottom
 		min-height: 500px
 		overflow: hidden
+		@include mq($until: desktop)
+			min-height: 400px
+		@include mq($until: tablet)
+			min-height: 250px
 		.img-responsive
 			bottom: -50px
 .main-slider__slide
@@ -67,18 +75,25 @@
 	&.visa-offline
 		margin-top: 70px
 		margin-bottom: -10px
-
+		@include mq($until: desktop)
+			margin-top: 45px
+			font-size: 26px
 .main-slider__subtitle
 	font-size: 30px
 	color: $blue
 	margin-top: 10px
+	@include mq($until: desktop)
+		font-size: 24px
 
 .main-slider__offer
 	font-size: 22px
 	color: $blue
 	margin-top: 25px
 	line-height: 27px
-	font-family: 'LatoWeb'
+	font-family: 'LatoWebSemibold'
+	@include mq($until: desktop)
+		font-size: 18px
+		line-height: 1.2em
 
 .main-slider__btn
 	margin-top: 35px
@@ -257,13 +272,16 @@
 	margin-top: 55px
 	padding: 35px 50px 30px 40px
 	@include mq($until: tablet)
-		padding: 25px 30px 20px 20px
+		padding: 25px 20px 20px 20px
+		margin-top: 30px
 	.form-group
 		label
 			font-size: 14px
 			font-family: 'LatoWebBold'
 			margin-bottom: 10px
 			display: block
+	.btn--green
+
 #mailer, .confirm__mailer
 	.form-group
 		label
@@ -271,11 +289,21 @@
 			font-family: 'LatoWebBold'
 			margin-bottom: 10px
 			display: block
+			@include mq($until: tablet)
+				margin-bottom: 5px
+				font-size: 12px
+
 
 .subscribe__title
 	font-size: 22px
 	margin-bottom: 15px
-
+	@include mq($until: wide)
+		font-size: 20px
+	@include mq($until: desktop)
+		font-size: 18px
+	@include mq($until: tablet)
+		font-size: 16px
+		line-height: 1.2em
 
 .subscribe__control
 	display: inline-block
@@ -287,9 +315,12 @@
 	font-size: 14px
 	font-family: 'LatoWebBold'
 	margin-right: 25px
+	@include mq($until: bp1090)
+		margin-bottom: 15px
 	@include mq($until: tablet)
 		margin-right: 0
 		margin-bottom: 15px
+		width: 100%
 	&:hover
 		@include box-shadow(0,0,6px, rgba(black, .35))
 	&:focus
@@ -301,14 +332,30 @@
 	font-family: 'LatoWebBold'
 	margin-bottom: 25px
 
+	@include mq($until: tablet)
+		margin-bottom: 5px
+		margin-top: 10px
+
 .subscribe__chechboxes
 	.calculator__form__filter__checkbox
 		display: inline-block
+		position: relative
+		margin-right: 0
 		label
 			font-size: 11px
 			opacity: .7
 			display: inline-block
 			font-family: 'LatoWeb'
+			padding-left: 25px
+			display: inline-block
+			line-height: 1.1em
+		label:before
+			position: absolute
+			left: 0 
+			top: 50%
+			@include transform(translateY(-50%))
+		@include mq($until: tablet)
+			display: block
 
 
 // ABOUT

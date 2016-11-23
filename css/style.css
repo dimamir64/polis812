@@ -3131,6 +3131,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   -ms-transition: all 0.4s ease;
   transition: all 0.4s ease;
   margin-top: -1px; }
+  @media (max-width: 61.99em) {
+    .btn--green {
+      font-size: 12px; } }
   .btn--green:hover {
     background: rgba(121, 201, 48, 0.8);
     color: white; }
@@ -4497,6 +4500,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
       background: #79C930;
       width: 35px;
       height: 3px; }
+@media (max-width: 47.99em) {
+  .main-slider .text-right {
+    text-align: left; } }
 
 .main-slider__image {
   min-height: 400px; }
@@ -4512,6 +4518,12 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   .main-slider__image.offset-bottom {
     min-height: 500px;
     overflow: hidden; }
+    @media (max-width: 61.99em) {
+      .main-slider__image.offset-bottom {
+        min-height: 400px; } }
+    @media (max-width: 47.99em) {
+      .main-slider__image.offset-bottom {
+        min-height: 250px; } }
     .main-slider__image.offset-bottom .img-responsive {
       bottom: -50px; }
 
@@ -4523,18 +4535,29 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   .main-slider__title.visa-offline {
     margin-top: 70px;
     margin-bottom: -10px; }
+    @media (max-width: 61.99em) {
+      .main-slider__title.visa-offline {
+        margin-top: 45px;
+        font-size: 26px; } }
 
 .main-slider__subtitle {
   font-size: 30px;
   color: #34495E;
   margin-top: 10px; }
+  @media (max-width: 61.99em) {
+    .main-slider__subtitle {
+      font-size: 24px; } }
 
 .main-slider__offer {
   font-size: 22px;
   color: #34495E;
   margin-top: 25px;
   line-height: 27px;
-  font-family: "LatoWeb"; }
+  font-family: "LatoWebSemibold"; }
+  @media (max-width: 61.99em) {
+    .main-slider__offer {
+      font-size: 18px;
+      line-height: 1.2em; } }
 
 .main-slider__btn {
   margin-top: 35px; }
@@ -4733,7 +4756,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   padding: 35px 50px 30px 40px; }
   @media (max-width: 47.99em) {
     .subscribe {
-      padding: 25px 30px 20px 20px; } }
+      padding: 25px 20px 20px 20px;
+      margin-top: 30px; } }
   .subscribe .form-group label {
     font-size: 14px;
     font-family: "LatoWebBold";
@@ -4745,10 +4769,24 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   font-family: "LatoWebBold";
   margin-bottom: 10px;
   display: block; }
+  @media (max-width: 47.99em) {
+    #mailer .form-group label, .confirm__mailer .form-group label {
+      margin-bottom: 5px;
+      font-size: 12px; } }
 
 .subscribe__title {
   font-size: 22px;
   margin-bottom: 15px; }
+  @media (max-width: 74.99em) {
+    .subscribe__title {
+      font-size: 20px; } }
+  @media (max-width: 61.99em) {
+    .subscribe__title {
+      font-size: 18px; } }
+  @media (max-width: 47.99em) {
+    .subscribe__title {
+      font-size: 16px;
+      line-height: 1.2em; } }
 
 .subscribe__control {
   display: inline-block;
@@ -4763,10 +4801,14 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   font-size: 14px;
   font-family: "LatoWebBold";
   margin-right: 25px; }
+  @media (max-width: 68.115em) {
+    .subscribe__control {
+      margin-bottom: 15px; } }
   @media (max-width: 47.99em) {
     .subscribe__control {
       margin-right: 0;
-      margin-bottom: 15px; } }
+      margin-bottom: 15px;
+      width: 100%; } }
   .subscribe__control:hover {
     -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
@@ -4779,14 +4821,35 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   opacity: 0.7;
   font-family: "LatoWebBold";
   margin-bottom: 25px; }
+  @media (max-width: 47.99em) {
+    .subscribe__options-title {
+      margin-bottom: 5px;
+      margin-top: 10px; } }
 
 .subscribe__chechboxes .calculator__form__filter__checkbox {
-  display: inline-block; }
+  display: inline-block;
+  position: relative;
+  margin-right: 0; }
   .subscribe__chechboxes .calculator__form__filter__checkbox label {
     font-size: 11px;
     opacity: 0.7;
     display: inline-block;
-    font-family: "LatoWeb"; }
+    font-family: "LatoWeb";
+    padding-left: 25px;
+    display: inline-block;
+    line-height: 1.1em; }
+  .subscribe__chechboxes .calculator__form__filter__checkbox label:before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  @media (max-width: 47.99em) {
+    .subscribe__chechboxes .calculator__form__filter__checkbox {
+      display: block; } }
 
 .hero-image {
   min-height: 300px;
@@ -5017,26 +5080,40 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 .main-slider__countries {
   text-align: left;
   margin-top: 35px; }
+  @media (max-width: 47.99em) {
+    .main-slider__countries {
+      margin-top: 20px;
+      margin-bottom: 20px; } }
 
 .main-slider__country {
   display: block;
-  padding: 10px 0px;
+  padding: 20px 0px;
   border-bottom: 1px solid #D5D9DB;
   font-size: 22px;
+  position: relative;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   transition: all 0.4s ease; }
+  @media (max-width: 74.99em) {
+    .main-slider__country {
+      font-size: 18px; } }
+  @media (max-width: 61.99em) {
+    .main-slider__country {
+      font-size: 16px;
+      padding: 15px 0; } }
   .main-slider__country:last-child {
     border-bottom: none; }
+    @media (max-width: 47.99em) {
+      .main-slider__country:last-child {
+        border-bottom: 1px solid #D5D9DB; } }
   .main-slider__country:visited, .main-slider__country:active, .main-slider__country:focus {
     text-decoration: none; }
   .main-slider__country:hover {
     color: #34495E;
-    background: rgba(255, 255, 255, 0.5);
-    padding-left: 5px; }
+    background: rgba(255, 255, 255, 0.5); }
     .main-slider__country:hover .ico {
-      margin-right: 10px; }
+      left: 5px; }
   .main-slider__country .ico {
     -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
@@ -5047,12 +5124,33 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     background-repeat: none;
     background-position: center;
     border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
     transition: all 0.4s ease; }
+    @media (max-width: 61.99em) {
+      .main-slider__country .ico {
+        width: 30px;
+        height: 30px;
+        background-size: cover; } }
   .main-slider__country span {
-    vertical-align: 10px; }
+    vertical-align: 0px;
+    display: inline-block;
+    padding-left: 60px; }
+    @media (max-width: 74.99em) {
+      .main-slider__country span {
+        padding-left: 55px; } }
+    @media (max-width: 61.99em) {
+      .main-slider__country span {
+        padding-left: 45px; } }
 
 .ico-finland {
   background-image: url("../img/ico-co-finland.svg"); }
