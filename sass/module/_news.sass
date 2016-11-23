@@ -1,0 +1,96 @@
+
+// ALL NEWS
+
+.news-hero
+	min-height: 260px
+	@include linear-gradient(45deg, #77C930 0%, #84CC2E 30%, #9CD12B 100%)
+	color: white
+
+.news-hero__crumbs
+	font-size: 14px
+	opacity: .7
+	margin-top: 80px
+
+.news-hero__title
+	font-size: 32px
+	margin-top: 75px
+	&.news-hero__title--inner
+		margin-top: 0px
+
+.news-hero__subtitle
+	font-size: 22px
+	opacity: .7
+	margin-top: 15px
+
+.news-hero__social-buttons
+	margin-top: 25px
+	.social__button
+		margin-top: 15px
+		display: inline-block
+		span
+			margin-right: 60px
+			margin-left: 60px
+
+	.social__button--instagram
+		background: #6A453B
+		&:hover
+			background: #856860
+
+	.social__button--vk
+		background: #46688C
+		&:hover
+			background: #6884A1
+
+	.social__button--youtube
+		background: #DC472E
+		&:hover
+			background: #E06A56
+
+.ico-show-more
+	background: url('../img/ico-more-news.svg') no-repeat center
+	width: 26px
+	height: 25px
+	margin-right: 10px
+	vertical-align: -5px
+
+.news-content
+	padding-top: 70px
+	padding-bottom: 100px
+	p
+		font-size: 18px
+		font-family: 'LatoWeb'
+		padding-bottom: 10px
+		display: block
+
+.news-content__prev, .news-content__next
+	font-size: 15px
+	font-family: 'LatoWebBold'
+	display: block
+	margin-top: 20px
+	display: block
+	@include transition(all .4s ease)
+	&:first-child
+		margin-top: 0
+	&:hover
+		opacity: .7
+		.ico
+
+
+
+.news-content__prev
+	text-align: left
+	
+.news-content__next
+	text-align: right
+
+.ico-prev
+	background: url('../img/ico-prev.svg') no-repeat center
+	width: 20px
+	height: 12px
+	margin-right: 10px
+
+.ico-next
+	background: url('../img/ico-next.svg') no-repeat center
+	width: 20px
+	height: 12px
+	margin-left: 10px

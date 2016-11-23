@@ -1,0 +1,24 @@
+
+.calculator__form__price__benefit
+	color: white
+	position: relative
+	margin-bottom: 45px
+	span
+		display: inline-block
+		padding-left: 85px
+		font-size: 18px
+		text-transform: uppercase
+
+.ico-price-delivery
+	background: url('../img/ico-price-delivery.svg') no-repeat center
+	width: 60px
+	height: 60px
+	position: absolute
+	left: 0
+	top: 50%
+	@include transform(translateY(-50%))
+
+.osago-sidebar
+	min-height: 780px
+	@include mq($until: desktop)
+		min-height: auto

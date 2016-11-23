@@ -1,0 +1,112 @@
+
+// VISA OFFLINE
+.main-slider__countries
+	text-align: left
+	margin-top: 35px
+
+.main-slider__country
+	display: block
+	padding: 10px 0px
+	border-bottom: 1px solid $borderColor
+	font-size: 22px
+	@include transition(all .4s ease)
+	&:last-child
+		border-bottom: none
+	&:visited, &:active, &:focus
+		text-decoration: none
+	&:hover
+		color: $blue
+		background: rgba(white, .5)
+		padding-left: 5px
+		.ico
+			margin-right: 10px
+	.ico
+		@include box-shadow(1px,1px,6px,rgba(black, .25))
+		width: 40px
+		height: 40px
+		margin-right: 15px
+		background-repeat: none
+		background-position: center
+		border-radius: 50%
+		@include transition(all .4s ease)
+	span
+		vertical-align: 10px
+
+.ico-finland
+	background-image: url('../img/ico-co-finland.svg')
+.ico-italy
+	background-image: url('../img/ico-co-italy.svg')
+.ico-lithuania
+	background-image: url('../img/ico-co-lithuania.svg')
+.ico-estonia
+	background-image: url('../img/ico-co-estonia.svg')
+
+.ico-usa
+	background-image: url('../img/ico-co-usa.svg')
+.ico-england
+	background-image: url('../img/ico-co-england.svg')
+.ico-holland
+	background-image: url('../img/ico-co-netherlands.svg')
+.ico-spain
+	background-image: url('../img/ico-co-spain.svg')
+
+// INNER
+
+.main-slider.visa-offline
+	.main-slider__image
+		min-height: 300px
+
+.promo-text__quick-links
+	&:after
+		content: ' '
+		clear: both
+		display: block
+
+.promo-text__quick-link
+	float: left
+	display: inline-block
+	max-width: 23.5%
+	min-height: 137px
+	margin-right: 1%
+	border: 1px solid $borderColor
+	background: white
+	padding: 15px 5px 7px 5px 
+	text-align: center
+	@include transition(all .4s ease)
+	&:hover
+		border-color: $blue
+		@include box-shadow(0,0,6px,rgba(black, .35))
+		.hr
+			background: $blue
+	.ico
+		display: block
+		margin: 0 auto
+		width: 58px
+		height: 40px
+		background-repeat: no-repeat
+		background-position: center
+
+.hr
+	display: block
+	width: 75px
+	height: 1px
+	background: $borderColor
+	margin: 10px auto
+	content: ' '
+	@include transition(all .4s ease)
+
+.promo-text__quick-link__name
+	font-size: 13px
+	line-height: 17px
+
+.ico-quick-doc
+	background-image: url("../img/ico-quick-doc.svg")
+
+.ico-quick-time
+	background-image: url("../img/ico-quick-time.svg")
+
+.ico-quick-photo
+	background-image: url("../img/ico-quick-photo.svg")
+
+.ico-quick-sky
+	background-image: url("../img/ico-quick-sky.svg")

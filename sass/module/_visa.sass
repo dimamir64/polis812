@@ -1,0 +1,186 @@
+// VISA
+
+.calculator__form__insurance-price
+	font-size: 18px
+	margin-top: 40px
+	display: inline-block
+	color: white
+	.fa
+		font-size: 0.9em
+
+.visa-form-help
+	color: white
+	margin-bottom: 40px
+	line-height: 1.2em
+	padding-left: 25px
+	padding-right: 10px
+.visa-form-help__name
+	font-size: 14px
+	font-family: 'LatoWebBold'
+.visa-form-help__desc
+	font-size: 12px
+	margin-top: 10px
+	font-family: 'LatoWeb'
+.visa-form-help__icons
+	margin-top: 10px
+	.ico
+		width: 18px
+		height: 18px
+		margin-right: 10px
+		background-repeat: no-repeat
+		background-position: center
+	.ico-pricing-doc
+		background-image: url("../img/ico-pricing-doc-white.svg")
+	.ico-pricing-photo
+		background-image: url("../img/ico-pricing-photo-white.svg")
+	.ico-pricing-insurance
+		background-image: url("../img/ico-pricing-insurance-white.svg")
+	.ico-pricing-consul
+		background-image: url("../img/ico-pricing-consul-white.svg")
+	.ico-pricing-podacha
+		background-image: url("../img/ico-pricing-podacha-white.svg")
+	.ico-pricing-sbor
+		background-image: url("../img/ico-pricing-sbor-white.svg")
+
+.visa-form-choicen
+	padding: 25px
+	border-radius: 5px
+	background: rgba(black, .35)
+	color: white
+.visa-form-choicen__price
+	font-size: 20px
+	margin-top: 10px
+	text-align: center
+
+
+// VISA STEP 2
+
+.visa__tabs
+	float: left
+	width: 70px
+
+.visa__tab
+	font-size: 12px
+	text-align: center
+	border-bottom: 1px solid $borderColor
+	background: rgba(white, .3)
+	padding: 7px 0px 3px 0px
+	cursor: pointer
+	span
+		padding-top: 5px
+		display: inline-block
+		line-height: 1.2em
+	&.active
+		color: white
+		background: rgba(black, .3)
+		.ico-visa-folder
+			background-image: url("../img/ico-visa-usertab.svg")
+			&.ready
+				background-image: url("../img/ico-visa-usertab-ready.svg")
+
+	&:first-child
+		border-top-left-radius: 5px
+	&:last-child
+		border-bottom: none
+		border-bottom-left-radius: 5px
+
+
+.ico-visa-folder
+	background: url('../img/ico-visa-usertab-black.svg') no-repeat center
+	width: 26px
+	height: 26px
+	&.ready
+		background-image: url("../img/ico-visa-usertab-ready.svg")
+		width: 30px
+		height: 30px
+
+.visa2__wrap
+	background: rgba(black, .3)
+	border-top-right-radius: 5px
+	border-bottom-right-radius: 5px
+	padding: 25px
+	margin-left: 70px
+	display: none
+	&.active
+		display: block
+	.calculator__form__separator
+		margin-bottom: 20px
+		height: 1px
+		margin-top: 25px
+	.form-group label
+		display: block
+	.form-group
+		&.cl:after
+			display: block
+			clear: both
+			content: ' '
+
+// прячем дефолты
+.toggle-maden-name, .toggle-have-schengen, .toggle-occupation-work, .toggle-occupation-vuz, .toggle-occupation-school
+	display: none
+
+
+// Uploaders
+
+.visa2__uploaders
+	background: rgba(black, .3)
+	padding: 25px 25px 10px 25px
+	color: white
+	margin-top: 65px
+	border-radius: 5px
+	.calculator__form__separator
+		height: 1px
+	.dropzone
+		margin-top: 10px
+
+.visa2__uploaders__title
+	font-size: 20px
+	text-align: center
+
+.visa2__uploader-head
+	font-size: 14px
+	margin-top: 20px
+	.ico-num
+		margin-right: 5px
+
+.ico-upload-demo
+	background: url('../img/ico-upload-demo.svg') no-repeat center
+	width: 20px
+	height: 20px
+	@include transition(all .4s ease)
+	opacity: .7
+	float: right
+	&:hover
+		opacity: 1
+
+.visa__helper
+	float: right
+	margin-top: 10px
+	font-size: 12px
+	opacity: .7
+	color: white
+	span
+		max-width: 100px
+		display: inline-block
+		text-align: right
+	&:hover
+		@include transition(all .4s ease)
+		opacity: 1
+
+.visa2__contacts
+	background: rgba(black, .3)
+	padding: 25px 25px 10px 25px
+	color: white
+	margin-top: 65px
+	border-radius: 5px
+	.calculator__form__separator
+		margin-bottom: 20px
+		height: 1px
+		margin-top: 25px
+
+.ico-visa-pdf
+	background: url('../img/ico-visa-pdf.svg') no-repeat center
+	width: 31px
+	height: 31px
+	margin-left: 10px
+

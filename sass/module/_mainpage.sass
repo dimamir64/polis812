@@ -1,0 +1,491 @@
+
+// Slider
+.main-slider
+
+	.owl-nav
+		position: absolute
+		bottom: 70px
+		left: 0
+		font-size: 0
+		.owl-prev, .owl-next
+			border: 1px solid #D4D7D8
+			height: 48px
+			width: 48px
+			display: inline-block
+			content: ' '
+			background-color: #F1F5F9
+			background-repeat: no-repeat
+			background-position: center
+			@include transition(all .4s ease)
+			&:hover
+				border-color: darken(#D4D7D8, 20%)
+		.owl-prev
+			background-image: url('../img/owl-prev.svg')
+			@include border-left-radius(4px)
+		.owl-next
+			background-image: url('../img/owl-next.svg')
+			@include border-right-radius(4px)
+			margin-left: -1px
+	.owl-dots
+		left: 0
+		@include transform(translateX(0))
+		bottom: 260px
+		.owl-dot
+			border-radius: 0
+			background: #BDC2C3
+			display: block
+			margin-bottom: 7px
+			width: 25px
+			height: 3px
+			border: none
+			@include transition(all .4s ease)
+			&.active
+				background: $green
+				width: 35px
+				height: 3px
+
+	
+.main-slider__image
+	min-height: 400px
+	.img-responsive
+		position: absolute
+		bottom: 0
+		left: 50%
+		@include transform(translateX(-50%))
+	&.offset-bottom
+		min-height: 500px
+		overflow: hidden
+		.img-responsive
+			bottom: -50px
+.main-slider__slide
+
+.main-slider__title
+	font-size: 32px
+	color: $green
+	margin-top: 80px
+	text-transform: uppercase
+	&.visa-offline
+		margin-top: 70px
+		margin-bottom: -10px
+
+.main-slider__subtitle
+	font-size: 30px
+	color: $blue
+	margin-top: 10px
+
+.main-slider__offer
+	font-size: 22px
+	color: $blue
+	margin-top: 25px
+	line-height: 27px
+	font-family: 'LatoWeb'
+
+.main-slider__btn
+	margin-top: 35px
+
+
+// Services
+
+.services__block
+	margin: 50px -5px 0 -5px
+	@include transition(all .4s ease)
+	padding: 10px 5px
+	min-height: 240px
+	&:hover
+		border-radius: 5px
+		@include box-shadow(0, 0, 6px, rgba(black, .2))
+
+.services__title
+	font-size: 20px
+	text-align: center
+	border-bottom: 1px solid $borderColor
+	padding-bottom: 5px
+	margin-bottom: 10px
+
+.services__links
+	padding-left: 10px
+	padding-right: 10px
+	a
+		position: relative
+		display: block
+		font-family: 'LatoWeb'
+		padding-top: 7px
+		padding-bottom: 7px
+		line-height: 1.2em
+		margin-top: 5px
+		@include transition(all .4s ease)
+		.ico
+			position: absolute
+			top: 50%
+			left: 10px
+			@include transform(translateY(-50%))
+		span
+			padding-left: 45px
+			display: inline-block
+		&:hover
+			background: #F8F8F8
+.ico-tick
+	background: url('../img/ico-tick.svg') no-repeat center
+	width: 24px
+	height: 24px
+
+// Prices
+
+.price__block
+	margin-top: 50px
+
+.price__title
+	color: $green
+	font-family: 'LatoWebBold'
+	font-size: 18px
+
+.price__price
+	font-size: 28px
+	margin-top: 14px
+	margin-bottom: 10px
+
+.price__short-desc
+	opacity: .7
+	line-height: 19px
+	font-family: 'LatoWeb'
+
+.price__separator
+	margin-top: 17px
+	border-bottom: 1px solid $borderColor
+	height: 1px
+	width: 70%
+.price__pricing-table
+	margin-top: 23px
+	margin-bottom: 10px
+
+.price__pricing-table__element
+	position: relative
+	margin-top: 12px
+	.ico
+		width: 18px
+		height: 18px
+		background-repeat: no-repeat
+		background-position: center
+		position: absolute
+		top: 50%
+		left: 0px
+		@include transform(translateY(-50%))
+	span
+		padding-left: 28px
+		display: inline-block
+
+
+.ico-pricing-doc
+	background-image: url("../img/ico-pricing-doc.svg")
+.ico-pricing-photo
+	background-image: url("../img/ico-pricing-photo.svg")
+.ico-pricing-insurance
+	background-image: url("../img/ico-pricing-insurance.svg")
+.ico-pricing-consul
+	background-image: url("../img/ico-pricing-consul.svg")
+.ico-pricing-podacha
+	background-image: url("../img/ico-pricing-podacha.svg")
+.ico-pricing-sbor
+	background-image: url("../img/ico-pricing-sbor.svg")
+.ico-pricing-delivery
+	background-image: url("../img/ico-pricing-delivery.svg")
+
+
+// Contacts
+
+.mainpage-contacts__office
+	position: relative
+	margin-bottom: 35px
+
+.mainpage-contacts__icon
+	position: absolute
+	left: 0
+
+.mainpage-contacts__content
+	padding-left: 60px
+
+.mainpage-contacts__name
+	display: inline-block
+	font-size: 20px
+	border-bottom: 1px dashed $fontColor
+	cursor: pointer
+	&.active
+		border-bottom: none
+
+.ico-contact-sky
+	background: url('../img/ico-contact-sky.svg') no-repeat center
+	width: 41px
+	height: 32px
+	position: relative
+	span
+		position: absolute
+		font-style: normal
+		color: white
+		font-size: 18px
+		font-family: 'LatoWebBold'
+		top: 50%
+		left: 50%
+		@include transform(translate(-50%, -50%))
+
+.ico-metro
+	width: 11px
+	height: 11px
+	border-radius: 50%
+	margin-left: 7px
+
+.ico-metro--red
+	background: #CE2B3D
+.ico-metro--blue
+	background: #2981BC
+.ico-metro--purple
+	background: #6A2872
+
+.mainpage-contacts__contact-data
+	display: none
+	font-family: 'LatoWeb'
+	font-size: 16px
+	line-height: 1.2em
+	&.active
+		display: block
+		margin-top: 15px
+
+// Subscribe
+
+.subscribe
+	border-radius: 6px
+	border: 2px solid $borderColor
+	margin-top: 55px
+	padding: 35px 50px 30px 40px
+	@include mq($until: tablet)
+		padding: 25px 30px 20px 20px
+	.form-group
+		label
+			font-size: 14px
+			font-family: 'LatoWebBold'
+			margin-bottom: 10px
+			display: block
+#mailer, .confirm__mailer
+	.form-group
+		label
+			font-size: 14px
+			font-family: 'LatoWebBold'
+			margin-bottom: 10px
+			display: block
+
+.subscribe__title
+	font-size: 22px
+	margin-bottom: 15px
+
+
+.subscribe__control
+	display: inline-block
+	border-radius: 4px
+	border: 1px solid $borderColor
+	@include transition(all .4s ease)
+	cursor: pointer
+	padding: 11px 20px
+	font-size: 14px
+	font-family: 'LatoWebBold'
+	margin-right: 25px
+	@include mq($until: tablet)
+		margin-right: 0
+		margin-bottom: 15px
+	&:hover
+		@include box-shadow(0,0,6px, rgba(black, .35))
+	&:focus
+		border: 1px solid $blue
+		outline: none
+
+.subscribe__options-title
+	opacity: .7
+	font-family: 'LatoWebBold'
+	margin-bottom: 25px
+
+.subscribe__chechboxes
+	.calculator__form__filter__checkbox
+		display: inline-block
+		label
+			font-size: 11px
+			opacity: .7
+			display: inline-block
+			font-family: 'LatoWeb'
+
+
+// ABOUT
+
+.hero-image
+	min-height: 300px
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+
+.promo-text__paragraph__icon
+	position: relative
+	min-height: 80px
+	.ico
+		width: 60px
+		height: 60px
+		background-repeat: no-repeat
+		background-position: center
+		position: absolute
+		top: 50%
+		@include transform(translateY(-50%))
+		left: 0
+		@include transition(all .4s ease)
+		@include mq($until: desktop)
+			width: 50px
+			height: 50px
+			background-size: cover
+
+	span
+		display: inline-block
+		font-size: 18px
+		padding-left: 80px
+		padding-top: 30px
+		line-height: 22px
+		@include mq($until: desktop)
+			font-size: 16px
+			line-height: 19px
+			padding-left: 60px
+		@include mq($until: tablet)
+			font-size: 14px
+			line-height: 17px
+
+.ico-about-price
+	background-image: url("../img/ico-about-price.svg")
+.ico-about-delivery
+	background-image: url("../img/ico-about-delivery.svg")
+.ico-about-offices
+	background-image: url("../img/ico-about-offices.svg")
+.ico-about-partners
+	background-image: url("../img/ico-about-partners.svg")
+
+.about__certificate
+	position: relative
+	&:after
+		display: block
+		position: absolute
+		left: 0
+		top: 0
+		content: ' '
+		width: 100%
+		height: 100%
+		background: rgba($green, .6) url('../img/image-zoom.svg') no-repeat bottom center
+		opacity: 0
+		@include transition(all .4s ease)
+	&:hover:after
+		opacity: 1
+		background-position: center
+
+// CONTACT PAGE
+
+.hero-map
+	height: 400px
+	width: 100%
+	@include mq($until: wide)
+		height: 350px
+	@include mq($until: desktop)
+		height: 300px
+	@include mq($until: tablet)
+		height: 250px
+
+
+.contacts__switch
+	text-align: center
+	margin-top: 30px
+	a
+		display: inline-block
+		font-size: 28px
+		border-bottom: 1px dashed $fontColor
+		@include transition(all .4s ease)
+		margin-right: 40px
+		&:last-child
+			margin-right: 0
+		&.active
+			color: $green
+			border-color: $green
+		&:hover:not(.active)
+			color: darken($green, 25%)
+			border-color: darken($green, 25%)
+
+
+.contacts
+	.mainpage-contacts__name
+		border-bottom: none
+		cursor: standart
+		padding-left: 60px
+	.mainpage-contacts__contact-data
+		display: block
+		margin-top: 15px
+	.mainpage-contacts__office
+		margin-top: 40px
+		padding-bottom: 20px
+	.mainpage-contacts__content
+		padding-left: 0
+
+#contacts-msk
+	display: none
+
+.contacts__icons
+	margin-top: 25px
+.contacts__icons__item
+	display: inline-block
+	margin-right: 25px
+	margin-bottom: 10px
+	span
+		font-size: 13px
+		font-family: 'LatoWeb'
+	.ico
+		width: 21px
+		height: 21px
+		background-repeat: no-repeat
+		background-position: center
+		margin-right: 10px
+		vertical-align: -3px
+
+.ico-contacts-parking
+	background-image: url("../img/ico-contacts-parking.svg")
+.ico-contacts-card
+	background-image: url("../img/ico-contacts-card.svg")
+.ico-contacts-calendar
+	background-image: url("../img/ico-contacts-calendar.svg")
+.ico-contacts-metro
+	background-image: url("../img/ico-contacts-metro.svg")
+.ico-contacts-dinner
+	background-image: url("../img/ico-contacts-dinner.svg")
+
+
+// COORDINATES
+.coordinates__row
+	margin-bottom: 20px
+	.small
+		font-size: 12px
+		color: #757575
+		margin-bottom: 5px
+	.big
+		font-size: 16px
+	.green-text
+		color: $green
+	.huge
+		font-size: 28px
+	a
+		font-size: 18px
+		&:hover
+			text-decoration: underline
+
+
+// PAYMENTS
+
+.payment-cards
+	margin-right: 20px
+	padding-top: 10px
+	img
+		&:last-child
+			padding-left: 10px
+
+.img-inline
+	img
+		display: inline-block
+		margin-right: 30px
+
+		

@@ -1,0 +1,33 @@
+.not-found__wrap
+	background: url('../img/404-wrap.svg') no-repeat center bottom
+	min-height: 325px
+	overflow: hidden
+
+.not-found__hand
+	background: url('../img/404-hand.svg') no-repeat 40% center
+	width: 100%
+	height: 325px
+	vertical-align: -8px
+
+.not-found__title
+	font-size: 32px
+	font-family: 'LatoWebBold'
+	margin-bottom: 15px
+	margin-top: 20px
+
+.not-found__info
+	font-size: 24px
+	line-height: 29px
+	font-family: 'LatoWeb'
+	opacity: .7
+	margin-bottom: 20px
+
+.not-found__visit
+	font-size: 24px
+	line-height: 29px
+	font-family: 'LatoWeb'
+	a
+		color: $green
+		@include transition(all .4s ease)
+		&:hover
+			text-decoration: underline
