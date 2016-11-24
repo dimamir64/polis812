@@ -182,7 +182,7 @@
 		padding-left: 60px
 		&.active
 			background-image: url("../img/ico-form-calendar.svg"), url('../img/ico-form-dropdown--active.svg')
-
+	
 .calculator__form__input--ico-time
 	background-image: url('../img/ico-form-time.svg')
 	background-repeat: no-repeat
@@ -266,6 +266,30 @@
 		padding-left: 60px
 		&.active
 			background-image: url("../img/ico-form-school.svg"), url('../img/ico-form-dropdown-outline-active.svg')
+
+.calculator__form__input--ico-numeric
+	background-image: url("../img/ico-form-numeric.svg")
+	background-repeat: no-repeat
+	background-position: 95% center
+	&.input--dropdown
+		background-image: url("../img/ico-form-numeric.svg"), url('../img/ico-form-dropdown-outline.svg')
+		background-repeat: no-repeat, no-repeat
+		background-position: 5% center, 95% center
+		padding-left: 60px
+		&.active
+			background-image: url("../img/ico-form-numeric.svg"), url('../img/ico-form-dropdown-outline-active.svg')
+
+.calculator__form__input--ico-issuer
+	background-image: url("../img/ico-form-issuer.svg")
+	background-repeat: no-repeat
+	background-position: 95% center
+	&.input--dropdown
+		background-image: url("../img/ico-form-issuer.svg"), url('../img/ico-form-dropdown-outline.svg')
+		background-repeat: no-repeat, no-repeat
+		background-position: 5% center, 95% center
+		padding-left: 60px
+		&.active
+			background-image: url("../img/ico-form-issuer.svg"), url('../img/ico-form-dropdown-outline-active.svg')
 
 
 .calculator__form__input--dropdown
@@ -1048,6 +1072,10 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
 			font-size: 11px
 			line-height: 1.1em
 			font-family: 'LatoWeb'
+	&.no-m-top
+		margin-top: 0
+		label span
+			vertical-align: -3px
 
 
 #calc__contacts_send_by_post--toggleble

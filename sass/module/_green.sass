@@ -134,6 +134,8 @@
 	label
 		font-size: 16px
 		color: white
+		&.block
+			display: block
 	.calculator__form__input--ico-car
 		background-position: 95% center
 		&.left-icon
@@ -249,6 +251,7 @@
 		.calculator__form__single-switch__wrap
 			background: #34495E
 			padding: 7px 40px 7px 20px
+			color: white
 			.toggler
 				right: 0px
 				background: #25B7D3
@@ -266,9 +269,9 @@
 	height: 30px
 	padding: 7px 20px 7px 40px
 	@include transition(all .4s ease)
+	color: $fontColor
 	.no
 		display: none
-		color: white
 	.toggler
 		content: ''
 		position: absolute

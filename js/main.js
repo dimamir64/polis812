@@ -209,6 +209,22 @@ $(document).ready(function(){
 	  console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
 	});
 
+	// Выбор с пустыми 
+	$('.calc__select-blank-placeholder').daterangepicker({
+	    "showWeekNumbers": false,
+	    "singleDatePicker": true,
+	    "showCustomRangeLabel": false,
+	    "showDropdowns": true,
+	    "autoApply": true,
+	    "startDate": new Date(),
+	    "endDate": "10/13/2016",
+	    "opens": "right",
+	    "locale": daterangepicker_locale
+	}, function(start, end, label) {
+	  console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
+	});
+	$('.calc__select-blank-placeholder').val('');
+
 
 	// дроп(даун :*) на программу
     $('#calc__select-program--toggle').click(function(e){
@@ -375,8 +391,8 @@ $(document).ready(function(){
 		$(this).closest('.calculator__form__dropdown__number-input').find('input').val(oldVal);
 	});
 
-	//$('#calc__form__step1').hide();
-	$('#calc__form__step2').hide();
+	$('#calc__form__step1').hide();
+	//$('#calc__form__step2').hide();
 	$('#calc__form__step3').hide();
 
 	$('#calc__form__submit--step1').click(function(e){

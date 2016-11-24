@@ -6,6 +6,9 @@ $(document).ready(function(){
 	
 	$("input[name=phone]").mask("+7 (999) 999-9999");
 	$("input[name=phone2]").mask("+7 (999) 999-9999");
+	$("input[name=passport]").mask("99 99 99999999");
+	$("input[name=year]").mask("9999");
+	
 	$.mask.definitions['~'] = '[А-Яа-яЁё]';
 	$("input[name=car-reg-num]").mask("~ 999 ~~", {autoclear: false});
 
@@ -144,14 +147,12 @@ $(document).ready(function(){
 
 	$('.calculator__form__single-switch').click(function(){
 		$(this).toggleClass('active');
+		$(this).find('.yes').toggle();
+		$(this).find('.no').toggle();
 		if ($(this).is(':not(.active)')){
-			$(this).find('.yes').show();
-			$(this).find('.no').hide();
 			var current_val = $(this).find('.yes').text();
 			$(this).find('input[type=hidden]').val(current_val);
 		} else {
-			$(this).find('.no').show();
-			$(this).find('.yes').hide();
 			var current_val = $(this).find('.no').text();
 			$(this).find('input[type=hidden]').val(current_val);
 
