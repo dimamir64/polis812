@@ -441,7 +441,7 @@
 	</div>
 	</form>
 
-	<!-- STEP 2 -->
+	<!-- STEP 2  SELF INPUT -->
 
 	<form class="calculator__form" id="calc__form__step2">
 		<div class="calculator__form__editable-step">
@@ -740,7 +740,7 @@
 				<!-- split -->
 				<div class="calculator__form__price-preview">
 					<div class="calculator__form__price-preview__title">
-						Цена вашего полиса Зеленая карта составит:	
+						Цена вашего полиса ОСАГО составит:	
 					</div>
 					<div class="calculator__form__price-preview__price">
 						2013.81 <i class="fa fa-rub"></i>
@@ -750,6 +750,174 @@
 					</div>
 					
 				</div>
+
+				<!-- alert -->
+				<div class="alert alert--black alert--osago-help">Конечная стоимость может отличаться в зависимости от достоверности введенного КБМ (текущий = 0.75). </div>
+			</div>
+
+		</div>
+
+
+	<!-- STEP 2  UPLOAD INPUT -->
+
+	<!-- убрать 60 -->
+	<div class="calculator__form mt60" id="calc__form__step2">
+		<div class="calculator__form__editable-step">
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Тип ТС
+				</span>
+					<span class="calculator__form__editable-step__field not-editable">Легковой автомобиль</span>
+			</div>
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Территория дейтсвия
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">Все страны (Европа + СНГ)</span>
+					<i class="ico ico-edit"></i>
+				</a>
+				<input type="text" placeholder="Все страны (Европа + СНГ)" class="calculator__form__editable-step__field__editable">
+			</div>
+			<div class="calculator__form__editable-step__wrapper">
+				<span class="calculator__form__editable-step__heading">
+					Срок действия
+				</span>
+				<a href="#" class="calc__form__toggle-fast-edit">
+					<span class="calculator__form__editable-step__field">15 дней</span>
+					<i class="ico ico-edit"></i>
+				</a>
+				<input type="text" placeholder="15 дней" class="calculator__form__editable-step__field__editable">
+			</div>
+		</div>
+
+		<div class="row mt60 regular-input" style="position: relative">
+
+			<div class="col-sm-6 col-sm-offset-1">
+				<div class="osago2__uploaders">
+					<div class="visa2__uploaders__title text-left">
+						ЗАГРУЗИТЕ ВАШИ ДОКУМЕНТЫ
+					</div>
+					<div class="visa2__uploader-head">
+						<i class="ico ico-num">1</i> Паспорт собственника (первый разворот и прописка)
+						<a href="#visa2-modal-passport" class="popup-with-move-anim">
+							<i class="ico ico-upload-demo" data-toggle="tooltip" data-placement="top" title="Показать пример"></i>
+						</a>
+					</div>
+					<form action="/file-upload" class="dropzone" enctype="multipart/form-data">
+						<div class="dz-message"><span>Выберите 2 файла со сканом пасспорта</span>
+							<div class="dz-message-add">или перетащите их в эту область</div></div>
+						<div class="fallback">
+							<input name="file" type="file" multiple />
+						</div>
+					</form>
+					<div class="visa2__uploader-head">
+						<i class="ico ico-num">2</i> Свидетельство о регистрации (2 стороны)
+						<a href="#visa2-modal-passport" class="popup-with-move-anim">
+							<i class="ico ico-upload-demo" data-toggle="tooltip" data-placement="top" title="Показать пример"></i>
+						</a>
+					</div>
+					<form action="/file-upload" class="dropzone" enctype="multipart/form-data">
+						<div class="dz-message"><span>Выберите 2 файла со сканом свидетельства о регистрации (СОРТ)</span>
+							<div class="dz-message-add">или перетащите их в эту область</div></div>
+						<div class="fallback">
+							<input name="file" type="file" multiple />
+						</div>
+					</form>
+					<div class="visa2__uploader-head">
+						<i class="ico ico-num">3</i> Права допущенных водителей 
+						<a href="#visa2-modal-passport" class="popup-with-move-anim">
+							<i class="ico ico-upload-demo" data-toggle="tooltip" data-placement="top" title="Показать пример"></i>
+						</a>
+					</div>
+					<form action="/file-upload" class="dropzone" enctype="multipart/form-data">
+						<div class="dz-message"><span>Выберите файлы со сканом водительских прав</span>
+							<div class="dz-message-add">или перетащите его в эту область</div></div>
+						<div class="fallback">
+							<input name="file" type="file" multiple />
+						</div>
+					</form>
+					<div class="visa2__uploader-head">
+						<i class="ico ico-num">4</i> Техосмотр (диагностическая карта)
+						<a href="#visa2-modal-passport" class="popup-with-move-anim">
+							<i class="ico ico-upload-demo" data-toggle="tooltip" data-placement="top" title="Показать пример"></i>
+						</a>
+					</div>
+					<form action="/file-upload" class="dropzone" enctype="multipart/form-data">
+						<div class="dz-message"><span>Выберите файлы со сканом диагностической карты</span>
+							<div class="dz-message-add">или перетащите его в эту область</div></div>
+						<div class="fallback">
+							<input name="file" type="file" multiple />
+						</div>
+					</form>
+					<div class="visa2__uploader-head">
+						<i class="ico ico-num">5</i> Старый полис ОСАГО
+						<a href="#visa2-modal-passport" class="popup-with-move-anim">
+							<i class="ico ico-upload-demo" data-toggle="tooltip" data-placement="top" title="Показать пример"></i>
+						</a>
+					</div>
+					<form action="/file-upload" class="dropzone" enctype="multipart/form-data">
+						<div class="dz-message"><span>Выберите файлы со сканом предидущего полиса</span>
+							<div class="dz-message-add">или перетащите его в эту область</div></div>
+						<div class="fallback">
+							<input name="file" type="file" multiple />
+						</div>
+					</form>
+					
+					<div class="calculator__form__separator mt20">
+					</div>
+					<div class="calculator__form__filter__checkbox calculator__form__contacts__checkbox calculator__form__checkbox--regular mt10 font-11">
+						<input type="checkbox" name="have_no_docs" id="have_no_docs">
+						<label for="have_no_docs">У меня не хватает документов и я хотел бы предоставить их лично в офис компании ПОЛИС или загрузить позднее </label>
+					</div>
+					<div class="row">
+						<div class="col-sm-8">
+							<div class="form-group mt10">
+								<label>Отправить напоминание на email</label>
+								<input type="text" class="calculator__form__input left-icon calculator__form__contacts__input--ico-email" name="" placeholder="my@mail.ru">
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12">
+						<button class="btn btn-calc-cta" type="submit">ПЕРЕЙТИ К ДОСТАВКЕ И ОПЛАТЕ</button>	
+
+					</div>
+				</div>
+			</div>
+
+			<!-- SIDEBAR --> 
+			<div class="col-sm-4 col-sm-offset-1 green-sidebar no-pad-top osago-sidebar">
+
+				<!-- split -->
+				<div class="calculator__form__price-preview">
+					<div class="calculator__form__price-preview__title">
+						Цена вашего полиса ОСАГО составит:	
+					</div>
+					<div class="calculator__form__price-preview__price">
+						4013.81 <i class="fa fa-rub"></i>
+					</div>
+					<!-- those are addons -->
+					<div class="calculator__form__price-preview__addons">
+						<span>диагностическая карта</span>
+						<span>+1000 Р </span>
+					</div>
+					<div class="calculator__form__price__separate"></div>
+					<div class="calculator__form__price-preview__price total">
+						5013.81 <i class="fa fa-rub"></i>
+					</div>
+					<!-- end addons -->
+					<div class="calculator__form__price-preview__logo">
+						<img src="images/alpha-small-logo.png" alt="" class="img-responsive">
+					</div>
+				</div>
+
+				<!-- alert -->
+				<div class="alert alert--black alert--osago-help">Конечная стоимость может отличаться в зависимости от достоверности введенного КБМ (текущий = <span id="currentCBM">0.75</span>). </div>
+
 			</div>
 
 		</div>
@@ -764,6 +932,27 @@
 		</div>
 	</section>
 	<!-- CALCULATOR :: END -->
+
+	<!-- OSAGO STEP 2 MODALS :: START -->
+	<div id="visa2-modal-passport" class="zoom-anim-dialog mfp-hide">
+		<div class="visa2__modal__title">Пример загранпасспорта</div>
+		<div class="row">
+			<div class="col-sm-7">
+				<img src="images/modal-zagranpasport.jpg" class="img-responsive" alt="">
+			</div>
+			<div class="col-sm-5">
+				<div class="visa2__modal__text">
+					<p>1. Подготовить документы, необходимые для заполнения формы заявления, а также файл с фотографией для паспорта. </p>
+					<p>2. Необходимо заполнить: Форму заявления, указав информацию о себе, супруге, родителях, о нахождении ранее в иностранном гражданстве, о месте обращения и т.д. </p>
+					<p>3. По окончании внесения данных система выполнит обработку и отправку Вашего запроса в государственные структуры для прохождения этапов регистрации, проверки заявления и принятия окончательного решения. </p>
+					<p>4. В случае успешного выполнения услуги на всех этапах система даст Вам положительный ответ, а государственные структуры проинформируют Вас о необходимости прийти в территориальный орган ведомства для получения документов. В случае отказа на каком-либо этапе оказания услуги система даст отрицательный ответ, а государственные структуры проинформируют Вас о причинах отказа.</p>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- OSAGO STEP 2 MODALS :: END -->
 
 	<!-- BENEFITS :: START -->
 	<section class="benefits text-center">

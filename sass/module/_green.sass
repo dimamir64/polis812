@@ -339,6 +339,31 @@
 	@include mq($until: desktop)
 		font-size: 20px
 		margin-top: 10px
+	&.total
+		text-align: center
+
+.calculator__form__price-preview__addons
+	margin-top: 10px
+	span
+		&:first-child
+			opacity: .7
+			font-family: 'LatoWeb'
+			float: left
+		&:last-child
+			float: right
+			font-size: 16px
+	&:after
+		clear: both
+		content: ' '
+		display: block
+
+.calculator__form__price__separate
+	background: $borderColor
+	height: 1px
+	margin-top: 10px
+	margin-bottom: 10px
+	margin-left: -15px
+	margin-right: -15px
 
 .calculator__form__price-preview__logo
 	position: absolute
@@ -377,5 +402,19 @@
 	width: 15px
 	height: 15px
 	margin-right: 10px
+
+
+.osago2__uploaders
+	color: white
+	.dropzone
+		margin-top: 10px
+		color: $fontColor
+		background-color: rgba(white, .3)
+		background-image: url("../img/dropzone-upload-dark.svg")
+		.dz-message
+			color: $fontColor
+			span
+				border-color: $fontColor
+
 
 
