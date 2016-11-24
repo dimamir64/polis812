@@ -134,6 +134,10 @@
 	label
 		font-size: 16px
 		color: white
+		@include mq($until: desktop)
+			font-size: 14px
+			max-height: 20px
+			overflow: hidden
 		&.block
 			display: block
 	.calculator__form__input--ico-car
@@ -293,6 +297,12 @@
 		padding-top: 0
 	&.no-pad-top
 		padding-top: 0
+	&.osago-sidebar
+		.visa2__uploader-head
+			color: white
+			margin-bottom: 7px
+			&:first-child
+				margin-top: 0
 
 .calculator__form__uploader
 	background: rgba(black, .3)
@@ -343,5 +353,29 @@
 		margin: 0 auto
 
 
+
+// OSAGO FIXES
+.osago-sidebar
+	.calculator__form__separator
+		margin-top: 20px
+
+	.calculator__form__contacts__input
+		width: 100%
+
+.osago_add_driver
+	color: white
+	margin-top: 15px
+	margin-bottom: 40px
+	@include transition(all .4s ease)
+	&:hover
+		opacity: .7
+	span
+		vertical-align: 3px
+
+.ico-plus
+	background: url('../img/ico-plus-oval.svg') no-repeat center
+	width: 15px
+	height: 15px
+	margin-right: 10px
 
 

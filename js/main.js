@@ -160,7 +160,22 @@ $(document).ready(function(){
 	}, function(start, end, label) {
 	  console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
 	});
+	$('#calc__select-birthdate').val();
+	$('.calc__select-birthdate').val();
 
+	$('.calc__select-birthdate').daterangepicker({
+	    "showWeekNumbers": false,
+	    "singleDatePicker": true,
+	    "showCustomRangeLabel": false,
+	    "showDropdowns": true,
+	    "autoApply": true,
+	    "startDate": "01/01/1970",
+	    "endDate": "10/13/2016",
+	    "opens": "right",
+	    "locale": daterangepicker_locale
+	}, function(start, end, label) {
+	  console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
+	});
 	// день доставки
 	$('#calc__select-delivery-date').daterangepicker({
 	    "showWeekNumbers": false,
