@@ -80,8 +80,7 @@ $(document).ready(function(){
 	var currentYear = currentDate.getFullYear();
 
 	var currentDateFormated = currentMonth.toString() + '/' + currentDay.toString() + '/' + currentYear.toString()
-	console.log(currentDateFormated);
-
+	
 	var daterangepicker_locale = {
 	        "format": "DD.MM.YYYY",
 	        "separator": " - ",
@@ -376,9 +375,9 @@ $(document).ready(function(){
 		$(this).closest('.calculator__form__dropdown__number-input').find('input').val(oldVal);
 	});
 
-	$('#calc__form__step1').hide();
+	//$('#calc__form__step1').hide();
 	$('#calc__form__step2').hide();
-	//$('#calc__form__step3').hide();
+	$('#calc__form__step3').hide();
 
 	$('#calc__form__submit--step1').click(function(e){
 		e.preventDefault();
@@ -490,6 +489,7 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 		$(this).closest('.promo-text__paragraph').find('p').slideToggle();
 		$(this).closest('.promo-text__paragraph').find('.promo-text__paragraph__table').slideToggle();
+		$(this).closest('.promo-text__paragraph').find('ul').slideToggle();
 	});
 
 	// переключалка дополнений страховки на мобильном
@@ -534,11 +534,13 @@ $(document).ready(function(){
 	function clickHamb() {
 	    if ( click == 1 ) {
 	        $(this).addClass('is-active');
+	        $('header').css('position', 'static');
 	        $('.mobile-nav').slideToggle(300);
 	        $('body').css('overflow-y', 'hidden');
 	        click = 2;
 	    } else {
 			$(this).removeClass('is-active');
+			$('header').css('position', 'relative');
 			$('.mobile-nav').hide();
 			$('body').css('overflow-y', 'scroll');
 	        click = 1;

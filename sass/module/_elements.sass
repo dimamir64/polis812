@@ -43,6 +43,10 @@
 			line-height: 19px
 		@include mq($until: tablet)
 			margin-top: 15px
+			font-size: 12px
+			line-height: 14px
+			padding-left: 0
+			padding-right: 0
 
 
 .btn-trsp
@@ -74,6 +78,14 @@
 	text-align: center
 	display: inline-block
 	@include transition(all .4s ease)
+	@include mq($until: desktop)
+		padding: 10px 40px
+
+	@include mq($until: tablet)
+		font-size: 13px
+		padding: 8px 35px
+		margin-bottom: 15px
+
 	&:hover
 		background: $green
 		color: white 
@@ -82,6 +94,16 @@
 	&.btn--outline--pricing
 		display: inline-block
 		padding: 10px 40px
+		@include mq($until: wide)
+			padding: 10px 30px
+
+		@include mq($until: desktop)
+			padding: 12px 20px 10px 20px
+			font-size: 12px
+			height: auto
+
+		@include mq($until: tablet)
+			padding: 10px 30px 8px 30px
 
 .btn-lg
 	font-size: 15px
@@ -133,6 +155,9 @@
 		color: white 
 	&:focus
 		outline: none
+	@include mq($until: tablet)
+		font-size: 14px
+
 
 .ico-tooltip
 	background: url('../img/ico-help.svg') no-repeat 0 0

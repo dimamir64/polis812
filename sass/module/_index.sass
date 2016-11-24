@@ -420,6 +420,9 @@
 	.ul
 		margin-left: 20px
 		font-family: 'LatoWeb'
+		@include mq($until: tablet)
+			display: none
+			margin-left: 15px
 
 	&.font-18
 		p
@@ -694,9 +697,10 @@
 
 .owl-dots
 	position: absolute
-	left: 50%
 	@include transform(translateX(-50%))
-	bottom: -50px
+	@include mq($from: tablet)
+		left: 50%
+		bottom: -50px
 	.owl-dot
 		display: inline-block
 		height: 15px
