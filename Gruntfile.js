@@ -56,6 +56,17 @@ module.exports = function(grunt) {
                 }
             }
         },
+        svg_sprite: {
+            options: {
+                // Task-specific options go here. 
+            },
+            your_target: {
+                expand      : true,
+                cwd         : 'img/',
+                src         : ['**/*.svg'],
+                dest        : 'css/',
+            },
+        },
         watch: {
             options: {
                 livereload: true
@@ -87,7 +98,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    
+    grunt.loadNpmTasks('grunt-svg-sprite');
+
     grunt.registerTask('default', ['sass', 'concat', 'uglify', 'cssmin']);
 
 };

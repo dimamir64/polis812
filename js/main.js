@@ -406,8 +406,9 @@ $(document).ready(function(){
 		$(this).closest('.calculator__form__dropdown__number-input').find('input').val(oldVal);
 	});
 
-	$('#calc__form__step1').hide();
-	//$('#calc__form__step2').hide();
+	//$('#calc__form__step1').hide();
+	$('#calc__form__step2').hide();
+	$('#calc__form__step2__self').hide();
 	$('#calc__form__step3').hide();
 
 	$('#calc__form__submit--step1').click(function(e){
@@ -417,6 +418,28 @@ $(document).ready(function(){
 		$('#calc__form__step3').hide();
 		$('#trigger-move-to-calc').trigger('click'); // переход к якорю
 		$('.calculator__wrapper').addClass('step--2');
+	});
+
+	// это для осаго
+	$('#calc__form__submit--step1--osago').click(function(e){
+		e.preventDefault();
+		if ( $('#car_input_method_1').is(':checked') ) {
+			$('#calc__form__step1').hide();
+			$('#calc__form__step2').show();
+			$('#calc__form__step3').hide();
+			$('#trigger-move-to-calc').trigger('click'); // переход к якорю
+			$('.calculator__wrapper').addClass('step--2');
+		} else if ( $('#car_input_method_2').is(':checked') ) {
+			alert('Отлично Мы вам позвоним !')
+			// тут отправка и редирект логика
+		} else if ( $('#car_input_method_3').is(':checked') ) {
+			$('#calc__form__step1').hide();
+			$('#calc__form__step2__self').show();
+			$('#calc__form__step3').hide();
+			$('#trigger-move-to-calc').trigger('click'); // переход к якорю
+			$('.calculator__wrapper').addClass('step--2');
+		}
+
 	});
 
 	$('.btn--insurance-card').click(function(e){
@@ -436,6 +459,7 @@ $(document).ready(function(){
 		$('.calculator__wrapper').addClass('step--3');
 		$('#trigger-move-to-calc--step3').trigger('click'); // переход к якорю
 	});
+
 
 	$('#calc__go-to__prev-step').click(function(e){
 		e.preventDefault();

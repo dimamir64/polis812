@@ -555,10 +555,13 @@
 	height: 24px
 	margin-left: 10px
 	vertical-align: -3px
+	@include transition(all .4s ease)
 	@include mq($until: tablet)
 		@include transform(scale(.8))
 		vertical-align: -5px
 		margin-left: -5px
+	&:hover
+		opacity: .7
 
 .ico-youtube
 	background: url('../img/ico-youtube.svg') no-repeat 0 0
