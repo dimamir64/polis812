@@ -400,16 +400,18 @@
 				@include transform(scale(0.8) rotate(225deg))
 	p
 		font-size: 15px
-		line-height: 18px
+		line-height: 20px
 		font-family: 'LatoWeb'
 		@include mq($until: desktop)
 			font-size: 14px
-			line-height: 17px
+			line-height: 18px
 
 		@include mq($until: tablet)
 			font-size: 12px
-			line-height: 14px
+			line-height: 15px
 			display: none
+	.green-text
+		color: $green
 	a
 		color: $green
 		text-decoration: underline
@@ -423,11 +425,16 @@
 		@include mq($until: tablet)
 			display: none
 			margin-left: 15px
-
+	ol
+		font-family: 'LatoWeb'
+		margin-left: 30px
+		list-style: decimal
+		li
+			margin-bottom: 5px
 	&.font-18
 		p
 			font-size: 18px
-			line-height: 22px
+			line-height: 23px
 			font-family: 'LatoWebBold'
 			@include mq($until: desktop)
 				font-size: 16px
@@ -693,6 +700,7 @@
 	width: 75px
 	height: 75px
 	border: 2px solid #EAEDED
+	overflow: hidden
 
 .testinmonial__content
 	text-align: center
@@ -792,6 +800,8 @@
 	&.news__card--short
 		min-height: auto
 		margin-top: 10px
+		@include mq($until: desktop)
+			padding-top: 30px
 		.news__card__title
 			margin-bottom: 0
 
@@ -863,6 +873,9 @@
 		display: inline-block
 		font-size: 13px
 		@include transform(all .4s ease)
+		@include mq($until: desktop)
+			font-size: 11px
+			
 
 
 .under-footer__copywrite

@@ -81,6 +81,14 @@
 	.main-slider__image
 		min-height: 300px
 
+		@include mq($until: desktop)
+			min-height: 200px
+		@include mq($until: tablet)
+			display: none
+	.main-slider__offer
+		margin-bottom: 30px
+		font-size: 16px
+
 .promo-text__quick-links
 	&:after
 		content: ' '
@@ -97,7 +105,17 @@
 	background: white
 	padding: 15px 5px 7px 5px 
 	text-align: center
+	overflow: hidden
+	word-break: break-all
 	@include transition(all .4s ease)
+	@include mq($until: desktop)
+		font-size: 11px
+	@include mq($until: tablet)
+		max-width: 100%
+		width: 100%
+		font-size: 12px
+		margin-bottom: 10px
+		min-height: auto
 	&:hover
 		border-color: $blue
 		@include box-shadow(0,0,6px,rgba(black, .35))

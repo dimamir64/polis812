@@ -16,6 +16,9 @@
 		label
 			margin-bottom: 8px
 			font-size: 16px
+			@include mq($until: desktop)
+				font-size: 14px
+				margin-bottom: 6px
 		.form-control
 			border: 1px solid $borderColor
 			padding: 15px 20px
@@ -30,6 +33,9 @@
 				border-color: $blue
 		textarea.form-control
 			height: 90px
+		.g-recaptcha
+			overflow: hidden
+			max-width: 100%
 
 	.calculator__form__input
 		height: 45px
@@ -188,6 +194,10 @@
 	text-align: left
 	.subscribe__control
 		width: 50%
+		@include mq($until: desktop)
+			width: 70%
+		@include mq($until: tablet)
+			width: 100%
 
 
 

@@ -1,19 +1,34 @@
 
 // ALL NEWS
 
+.news .news__card
+	@include mq($until: desktop)
+		padding-top: 30px
 .news-hero
 	min-height: 260px
 	@include linear-gradient(45deg, #77C930 0%, #84CC2E 30%, #9CD12B 100%)
 	color: white
+	@include mq($until: tablet)
+		min-height: 200px
 
 .news-hero__crumbs
 	font-size: 14px
 	opacity: .7
 	margin-top: 80px
+	@include mq($until: tablet)
+		margin-top: 30px
+
 
 .news-hero__title
 	font-size: 32px
 	margin-top: 75px
+	@include mq($until: desktop)
+		font-size: 28px
+		line-height: 1.2em
+
+	@include mq($until: tablet)
+		margin-top: 30px
+		font-size: 24px
 	&.news-hero__title--inner
 		margin-top: 0px
 
@@ -21,15 +36,24 @@
 	font-size: 22px
 	opacity: .7
 	margin-top: 15px
+	@include mq($until: tablet)
+		font-size: 18px
 
 .news-hero__social-buttons
 	margin-top: 25px
+	@include mq($until: tablet)
+		margin-top: 15px
+		margin-bottom: 20px
+		text-align: left
 	.social__button
 		margin-top: 15px
 		display: inline-block
 		span
 			margin-right: 60px
 			margin-left: 60px
+			@include mq($until: desktop)
+				margin-left: 30px
+				margin-right: 30px
 
 	.social__button--instagram
 		background: #6A453B
@@ -56,11 +80,24 @@
 .news-content
 	padding-top: 70px
 	padding-bottom: 100px
+	@include mq($until: desktop)
+		padding-top: 50px
+		padding-bottom: 70px
+	@include mq($until: tablet)
+		padding-top: 35px
+		padding-bottom: 50px
+	.col-sm-8
+		@include mq($until: tablet)
+			margin-bottom: 30px
 	p
 		font-size: 18px
 		font-family: 'LatoWeb'
 		padding-bottom: 10px
 		display: block
+		@include mq($until: desktop)
+			font-size: 16px
+		@include mq($until: tablet)
+
 
 .news-content__prev, .news-content__next
 	font-size: 15px
@@ -69,13 +106,12 @@
 	margin-top: 20px
 	display: block
 	@include transition(all .4s ease)
-	&:first-child
-		margin-top: 0
 	&:hover
 		opacity: .7
 		.ico
 
-
+.news-content__prev
+	margin-top: 0
 
 .news-content__prev
 	text-align: left
@@ -94,3 +130,19 @@
 	width: 20px
 	height: 12px
 	margin-left: 10px
+
+.news-loader
+	margin-bottom: 30px
+	display: none
+	&.loading
+		display: block
+		.ico
+			animation-name: rotation
+			animation-duration: 1s
+			animation-iteration-count: infinite
+			animation-timing-function: linear
+
+.ico-news-loader
+	background: url('../img/ico-news-loader.svg') no-repeat center
+	width: 50px
+	height: 50px

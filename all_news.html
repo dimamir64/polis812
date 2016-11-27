@@ -255,8 +255,18 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-12 text-center mt60">
-					<a href="#" class="btn btn--green"><i class="ico ico-show-more"></i>ПОКАЗАТЬ БОЛЬШЕ НОВОСТЕЙ</a>
+					<div class="news-loader">
+						<i class="ico ico-news-loader"></i>
+					</div>
+					<a href="#" class="btn btn--green" id="load-more-news"><i class="ico ico-show-more"></i>ПОКАЗАТЬ БОЛЬШЕ НОВОСТЕЙ</a>
 				</div>
+				<script type="text/javascript">
+				$(document).ready(function() {
+				    $('#load-more-news').click(function(){
+				       $('.news-loader').addClass('loading');
+				    });
+				});
+				</script>
 			</div>
 		</div>
 	</section>
