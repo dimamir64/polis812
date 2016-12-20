@@ -80,7 +80,7 @@ $(document).ready(function(){
 	var currentYear = currentDate.getFullYear();
 
 	var currentDateFormated = currentMonth.toString() + '/' + currentDay.toString() + '/' + currentYear.toString()
-	
+
 	var daterangepicker_locale = {
 	        "format": "DD.MM.YYYY",
 	        "separator": " - ",
@@ -116,7 +116,7 @@ $(document).ready(function(){
 	        "firstDay": 1
 	}
 
-	// начальная 
+	// начальная
 	$('#calc__select-startdate, #calc__select-enddate').daterangepicker({
 	    "showWeekNumbers": false,
 	    "singleDatePicker": true,
@@ -224,7 +224,7 @@ $(document).ready(function(){
 	  console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
 	});
 
-	// Выбор с пустыми 
+	// Выбор с пустыми
 	$('.calc__select-blank-placeholder').daterangepicker({
 	    "showWeekNumbers": false,
 	    "singleDatePicker": true,
@@ -252,7 +252,7 @@ $(document).ready(function(){
     	if ($('#program__sport').attr("checked") != 'checked') {
     		$('#calc__select-program-show').val('Спорт');
     	} else {
-    		
+
     	}
     });
 
@@ -268,7 +268,7 @@ $(document).ready(function(){
     	if ($('#program__driving').attr("checked") != 'checked') {
     		$('#calc__select-program-show').val('Управление мопедом');
     	} else {
-    		
+
     	}
     });
 
@@ -450,7 +450,7 @@ $(document).ready(function(){
 		$('.calculator__wrapper').addClass('step--3');
 		$('#trigger-move-to-calc--step3').trigger('click'); // переход к якорю
 	});
-	
+
 	$('#calc__form__submit--step2').click(function(e){
 		e.preventDefault();
 		$('#calc__form__step1').hide();
@@ -494,7 +494,7 @@ $(document).ready(function(){
 
 	$('.calculator__form__editable-step__field__editable').keydown(function (e){
 	    if(e.keyCode == 13){
-	    	// ajax request here 
+	    	// ajax request here
 			$(this).parent('.calculator__form__editable-step__wrapper').find('.calc__form__toggle-fast-edit').show();
 			$(this).parent('.calculator__form__editable-step__wrapper').find('.calculator__form__editable-step__field__editable').hide();
 	    }
@@ -705,7 +705,7 @@ $(document).ready(function(){
         var el = $(this).attr('href');
         $('body').animate({
             scrollTop: $(el).offset().top}, 1000);
-        return false; 
+        return false;
 	});
 
 	$('.popup-with-zoom-anim').magnificPopup({
@@ -718,7 +718,7 @@ $(document).ready(function(){
 
 		closeBtnInside: true,
 		preloader: false,
-		
+
 		midClick: true,
 		removalDelay: 300,
 		mainClass: 'my-mfp-zoom-in'
@@ -734,12 +734,12 @@ $(document).ready(function(){
 
 		closeBtnInside: true,
 		preloader: false,
-		
+
 		midClick: true,
 		removalDelay: 300,
 		mainClass: 'my-mfp-slide-bottom'
 	});
-	
+
 	$('.contact-form__file input').on('change', function(){
 		getName(this.value);
 	});
@@ -752,8 +752,8 @@ function getName (str){
     }
     else{
         var i = str.lastIndexOf('/')+1;
-    }						
-    var filename = str.slice(i);			
+    }
+    var filename = str.slice(i);
     var uploaded = document.getElementById("fileformlabel");
     uploaded.innerHTML = filename;
 }

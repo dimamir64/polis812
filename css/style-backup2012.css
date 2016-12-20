@@ -1,46 +1,46 @@
 @charset "UTF-8";
-/* Webfont: Lato-Bold */
+/* Webfont: Lato-Bold1 */
 @font-face {
   font-family: 'LatoWebBold';
-  src: url("../fonts/Lato-Bold.eot");
+  src: url("/fonts/Lato-Bold.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff"), url("../fonts/Lato-Bold.ttf") format("truetype");
+  src: url("/fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Lato-Bold.woff2") format("woff2"), url("/fonts/Lato-Bold.woff") format("woff"), url("/fonts/Lato-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility; }
 /* Webfont: Lato-Italic */
 @font-face {
   font-family: 'LatoWeb';
-  src: url("../fonts/Lato-Italic.eot");
+  src: url("/fonts/Lato-Italic.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/Lato-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Italic.woff2") format("woff2"), url("../fonts/Lato-Italic.woff") format("woff"), url("../fonts/Lato-Italic.ttf") format("truetype");
+  src: url("/fonts/Lato-Italic.eot?#iefix") format("embedded-opentype"), url("/fonts/Lato-Italic.woff2") format("woff2"), url("/fonts/Lato-Italic.woff") format("woff"), url("/fonts/Lato-Italic.ttf") format("truetype");
   font-style: italic;
   font-weight: normal;
   text-rendering: optimizeLegibility; }
 /* Webfont: Lato-Light */
 @font-face {
   font-family: 'LatoWebLight';
-  src: url("../fonts/Lato-Light.eot");
+  src: url("/fonts/Lato-Light.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Light.woff2") format("woff2"), url("../fonts/Lato-Light.woff") format("woff"), url("../fonts/Lato-Light.ttf") format("truetype");
+  src: url("/fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Lato-Light.woff2") format("woff2"), url("/fonts/Lato-Light.woff") format("woff"), url("/fonts/Lato-Light.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility; }
 /* Webfont: Lato-Regular */
 @font-face {
   font-family: 'LatoWeb';
-  src: url("../fonts/Lato-Regular.eot");
+  src: url("/fonts/Lato-Regular.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
+  src: url("/fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Lato-Regular.woff2") format("woff2"), url("/fonts/Lato-Regular.woff") format("woff"), url("/fonts/Lato-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility; }
 /* Webfont: Lato-Semibold */
 @font-face {
   font-family: 'LatoWebSemibold';
-  src: url("../fonts/Lato-Semibold.eot");
+  src: url("/fonts/Lato-Semibold.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/Lato-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato-Semibold.woff") format("woff"), url("../fonts/Lato-Semibold.ttf") format("truetype");
+  src: url("/fonts/Lato-Semibold.eot?#iefix") format("embedded-opentype"), url("/fonts/Lato-Semibold.woff2") format("woff2"), url("/fonts/Lato-Semibold.woff") format("woff"), url("/fonts/Lato-Semibold.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility; }
@@ -634,7 +634,7 @@ footer {
   margin-top: -3px; }
 
 .ico-header-people {
-  background: url("../img/ico-people.svg") no-repeat 0 0;
+  background: url("/img/ico-people.svg") no-repeat 0 0;
   vertical-align: -4px;
   width: 37px;
   height: 21px;
@@ -653,7 +653,7 @@ footer {
   margin: 0 5px; }
 
 .caret {
-  background: url("../img/caret.svg");
+  background: url("/img/caret.svg");
   width: 8px;
   height: 5px;
   border: none; }
@@ -692,7 +692,7 @@ footer {
       float: right; } }
 
 .ico-hot-offer {
-  background: url("../img/ico-hot-offer.svg") no-repeat center;
+  background: url("/img/ico-hot-offer.svg") no-repeat center;
   width: 12px;
   height: 15px;
   margin-right: 5px;
@@ -795,7 +795,7 @@ footer {
   opacity: 0; }
 
 .ico-question--big {
-  background: url("../img/ico-question-big.svg") no-repeat 0 0;
+  background: url("/img/ico-question-big.svg") no-repeat 0 0;
   width: 30px;
   height: 30px;
   vertical-align: -4px;
@@ -977,7 +977,7 @@ footer {
     cursor: pointer; }
     .toggable-mobile .insurance__title:after {
       display: inline-block;
-      background: url("../img/ico-plus-text.svg") no-repeat 0 0;
+      background: url("/img/ico-plus-text.svg") no-repeat 0 0;
       width: 20px;
       height: 20px;
       content: " ";
@@ -1032,7 +1032,7 @@ footer {
       min-width: auto; } }
 
 .insurance__docs__link--with-ico {
-  background-image: url("../img/ico-pdf.svg");
+  background-image: url("/img/ico-pdf.svg");
   background-repeat: no-repeat;
   background-position: 15px center;
   font-family: "LatoWeb";
@@ -1063,7 +1063,7 @@ footer {
         display: inline-block; }
         .promo-text__paragraph .h2:after {
           display: inline-block;
-          background: url("../img/ico-plus-text.svg") no-repeat 0 0;
+          background: url("/img/ico-plus-text.svg") no-repeat 0 0;
           width: 20px;
           height: 20px;
           content: " ";
@@ -1162,7 +1162,7 @@ footer {
         line-height: 20px; } }
     .promo-text__paragraph__table__row span:first-child:after {
       min-width: 150px;
-      background: url("../img/dots.svg") repeat-x 0 bottom;
+      background: url("/img/dots.svg") repeat-x 0 bottom;
       height: 10px;
       content: " ";
       display: inline-block;
@@ -1173,7 +1173,7 @@ footer {
           min-width: 50px; } }
 
 .video__wrap {
-  background: url("../img/video-holder-mac.png") no-repeat center;
+  background: url("/img/video-holder-mac.png") no-repeat center;
   margin-top: 40px;
   min-height: 367px; }
   @media (max-width: 47.99em) {
@@ -1249,17 +1249,17 @@ footer {
     background: #DC472E; }
 
 .ico-instagram {
-  background: url("../img/ico-instagram.svg") no-repeat 0 0;
+  background: url("/img/ico-instagram.svg") no-repeat 0 0;
   width: 50px;
   height: 50px; }
 
 .ico-vk {
-  background: url("../img/ico-vk.svg") no-repeat 0 0;
+  background: url("/img/ico-vk.svg") no-repeat 0 0;
   width: 50px;
   height: 50px; }
 
 .ico-vk--heading {
-  background: url("../img/ico-vk-heading.svg") no-repeat 0 0;
+  background: url("/img/ico-vk-heading.svg") no-repeat 0 0;
   width: 43px;
   height: 24px;
   margin-left: 10px;
@@ -1281,19 +1281,19 @@ footer {
     opacity: 0.7; }
 
 .ico-youtube {
-  background: url("../img/ico-youtube.svg") no-repeat 0 0;
+  background: url("/img/ico-youtube.svg") no-repeat 0 0;
   width: 50px;
   height: 50px;
   border-radius: 50%; }
 
 .ico-fb {
-  background: url("../img/ico-fb.svg") no-repeat 0 0;
+  background: url("/img/ico-fb.svg") no-repeat 0 0;
   width: 50px;
   height: 50px;
   border-radius: 50%; }
 
 .ico-gplus {
-  background: url("../img/ico-gplus.svg") no-repeat 0 0;
+  background: url("/img/ico-gplus.svg") no-repeat 0 0;
   width: 50px;
   height: 50px;
   border-radius: 50%; }
@@ -1395,7 +1395,7 @@ footer {
     content: " ";
     width: 13px;
     height: 10px;
-    background: url("../img/ico-more.svg") no-repeat 0 0;
+    background: url("/img/ico-more.svg") no-repeat 0 0;
     vertical-align: -1px;
     margin-left: 5px;
     -webkit-transition: all 0.4s ease;
@@ -1421,7 +1421,7 @@ footer {
     width: 28px;
     height: 25px;
     content: " ";
-    background: url("../img/ico-quote.svg") no-repeat 0 0; }
+    background: url("/img/ico-quote.svg") no-repeat 0 0; }
 
 .testimonial__image {
   position: absolute;
@@ -1756,7 +1756,7 @@ footer {
     transform: translateX(-50%);
     display: block;
     content: " ";
-    background: url("../img/ico-helper-arrow.svg") no-repeat center;
+    background: url("/img/ico-helper-arrow.svg") no-repeat center;
     width: 40px;
     height: 40px; }
 
@@ -1916,144 +1916,144 @@ footer {
   display: inline-block; }
 
 .calculator__form__input--ico-loc {
-  background-image: url("../img/ico-form-location.svg");
+  background-image: url("/img/ico-form-location.svg");
   background-repeat: no-repeat;
   background-position: 97% center; }
   .calculator__form__input--ico-loc.input--dropdown {
-    background-image: url("../img/ico-form-location.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-location.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__input--ico-loc.input--dropdown.active {
-      background-image: url("../img/ico-form-location.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-location.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 .calculator__form__input--ico-globe {
-  background-image: url("../img/ico-form-globe.svg");
+  background-image: url("/img/ico-form-globe.svg");
   background-repeat: no-repeat;
   background-position: 97% center; }
 
 .calculator__form__input--ico-calendar {
-  background-image: url("../img/ico-form-calendar.svg");
+  background-image: url("/img/ico-form-calendar.svg");
   background-repeat: no-repeat;
   background-position: 95% center; }
   .calculator__form__input--ico-calendar.input--dropdown {
-    background-image: url("../img/ico-form-calendar.svg"), url("../img/ico-form-dropdown.svg");
+    background-image: url("/img/ico-form-calendar.svg"), url("/img/ico-form-dropdown.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 15px center, 95% center;
     padding-left: 60px; }
     .calculator__form__input--ico-calendar.input--dropdown.active {
-      background-image: url("../img/ico-form-calendar.svg"), url("../img/ico-form-dropdown--active.svg"); }
+      background-image: url("/img/ico-form-calendar.svg"), url("/img/ico-form-dropdown--active.svg"); }
 
 .calculator__form__input--ico-time {
-  background-image: url("../img/ico-form-time.svg");
+  background-image: url("/img/ico-form-time.svg");
   background-repeat: no-repeat;
   background-position: 95% center; }
   .calculator__form__input--ico-time.input--dropdown {
-    background-image: url("../img/ico-form-time.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-time.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__input--ico-time.input--dropdown.active {
-      background-image: url("../img/ico-form-time.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-time.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 .calculator__form__input--ico-insurance {
-  background-image: url("../img/ico-form-insurance.svg");
+  background-image: url("/img/ico-form-insurance.svg");
   background-repeat: no-repeat;
   background-position: 95% center; }
   .calculator__form__input--ico-insurance.input--dropdown {
-    background-image: url("../img/ico-form-insurance.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-insurance.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__input--ico-insurance.input--dropdown.active {
-      background-image: url("../img/ico-form-insurance.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-insurance.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 .calculator__form__input--ico-owner {
-  background-image: url("../img/ico-form-owner.svg");
+  background-image: url("/img/ico-form-owner.svg");
   background-repeat: no-repeat;
   background-position: 95% center; }
   .calculator__form__input--ico-owner.input--dropdown {
-    background-image: url("../img/ico-form-owner.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-owner.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__input--ico-owner.input--dropdown.active {
-      background-image: url("../img/ico-form-owner.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-owner.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 .calculator__form__input--ico-family-status {
-  background-image: url("../img/ico-form-family-status.svg");
+  background-image: url("/img/ico-form-family-status.svg");
   background-repeat: no-repeat;
   background-position: 95% center; }
   .calculator__form__input--ico-family-status.input--dropdown {
-    background-image: url("../img/ico-form-family-status.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-family-status.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__input--ico-family-status.input--dropdown.active {
-      background-image: url("../img/ico-form-family-status.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-family-status.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 .calculator__form__input--ico-occupation {
-  background-image: url("../img/ico-form-occupation.svg");
+  background-image: url("/img/ico-form-occupation.svg");
   background-repeat: no-repeat;
   background-position: 95% center; }
   .calculator__form__input--ico-occupation.input--dropdown {
-    background-image: url("../img/ico-form-occupation.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-occupation.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__input--ico-occupation.input--dropdown.active {
-      background-image: url("../img/ico-form-occupation.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-occupation.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 .calculator__form__input--ico-destination {
-  background-image: url("../img/ico-form-visa-dest.svg");
+  background-image: url("/img/ico-form-visa-dest.svg");
   background-repeat: no-repeat;
   background-position: 95% center; }
   .calculator__form__input--ico-destination.input--dropdown {
-    background-image: url("../img/ico-form-visa-dest.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-visa-dest.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__input--ico-destination.input--dropdown.active {
-      background-image: url("../img/ico-form-visa-dest.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-visa-dest.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 .calculator__form__input--ico-school {
-  background-image: url("../img/ico-form-school.svg");
+  background-image: url("/img/ico-form-school.svg");
   background-repeat: no-repeat;
   background-position: 95% center; }
   .calculator__form__input--ico-school.input--dropdown {
-    background-image: url("../img/ico-form-school.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-school.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__input--ico-school.input--dropdown.active {
-      background-image: url("../img/ico-form-school.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-school.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 .calculator__form__input--ico-numeric {
-  background-image: url("../img/ico-form-numeric.svg");
+  background-image: url("/img/ico-form-numeric.svg");
   background-repeat: no-repeat;
   background-position: 95% center; }
   .calculator__form__input--ico-numeric.input--dropdown {
-    background-image: url("../img/ico-form-numeric.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-numeric.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__input--ico-numeric.input--dropdown.active {
-      background-image: url("../img/ico-form-numeric.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-numeric.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 .calculator__form__input--ico-issuer {
-  background-image: url("../img/ico-form-issuer.svg");
+  background-image: url("/img/ico-form-issuer.svg");
   background-repeat: no-repeat;
   background-position: 95% center; }
   .calculator__form__input--ico-issuer.input--dropdown {
-    background-image: url("../img/ico-form-issuer.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-issuer.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__input--ico-issuer.input--dropdown.active {
-      background-image: url("../img/ico-form-issuer.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-issuer.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 .calculator__form__input--dropdown {
-  background-image: url("../img/ico-form-dropdown.svg");
+  background-image: url("/img/ico-form-dropdown.svg");
   background-repeat: no-repeat;
   background-position: 80% center;
   display: inline-block;
@@ -2067,60 +2067,60 @@ footer {
   .calculator__form__input--dropdown.disabled {
     background-image: none; }
   .calculator__form__input--dropdown.active {
-    background-image: url("../img/ico-form-dropdown--active.svg"); }
+    background-image: url("/img/ico-form-dropdown--active.svg"); }
 
 .calculator__form__input--ico-car {
-  background-image: url("../img/ico-form-car.svg");
+  background-image: url("/img/ico-form-car.svg");
   background-repeat: no-repeat;
   background-position: 97% center; }
   .calculator__form__input--ico-car.input--dropdown {
-    background-image: url("../img/ico-form-car.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-car.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__input--ico-car.input--dropdown.active {
-      background-image: url("../img/ico-form-car.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-car.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 .calculator__form__contacts__input--ico-car-power {
-  background-image: url("../img/ico-form-car-power.svg");
+  background-image: url("/img/ico-form-car-power.svg");
   background-repeat: no-repeat;
   background-position: 97% center; }
   .calculator__form__contacts__input--ico-car-power.input--dropdown {
-    background-image: url("../img/ico-form-car-power.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-car-power.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__contacts__input--ico-car-power.input--dropdown.active {
-      background-image: url("../img/ico-form-car-power.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-car-power.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 .calculator__form__input--ico-stazh {
-  background-image: url("../img/ico-form-stazh.svg");
+  background-image: url("/img/ico-form-stazh.svg");
   background-repeat: no-repeat;
   background-position: 97% center; }
   .calculator__form__input--ico-stazh.input--dropdown {
-    background-image: url("../img/ico-form-stazh.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-stazh.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__input--ico-stazh.input--dropdown.active {
-      background-image: url("../img/ico-form-stazh.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-stazh.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 .calculator__form__input--ico-people-group {
-  background-image: url("../img/ico-form-people-group.svg");
+  background-image: url("/img/ico-form-people-group.svg");
   background-repeat: no-repeat;
   background-position: 95% center; }
 
 .calculator__form__input--ico-kbm {
-  background-image: url("../img/ico-form-kbm.svg");
+  background-image: url("/img/ico-form-kbm.svg");
   background-repeat: no-repeat;
   background-position: 97% center; }
   .calculator__form__input--ico-kbm.input--dropdown {
-    background-image: url("../img/ico-form-kbm.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-kbm.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__input--ico-kbm.input--dropdown.active {
-      background-image: url("../img/ico-form-kbm.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-kbm.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 .calc__form__alpha {
   position: absolute;
@@ -2174,7 +2174,7 @@ footer {
   padding: 10px 20px;
   border: 1px solid #E5E8E9;
   margin-bottom: 10px;
-  background: white url("../img/ico-form-search.svg") no-repeat 97% center; }
+  background: white url("/img/ico-form-search.svg") no-repeat 97% center; }
   .calculator__form__dropdown__input-text:focus {
     border: 1px solid #25B7D3;
     outline: none; }
@@ -2253,8 +2253,8 @@ footer {
     position: absolute;
     left: 0;
     top: 0;
-    -webkit-mask: url("../img/ico-minus-btn.svg") no-repeat 50% 50%;
-    mask: url("../img/ico-minus-btn.svg") no-repeat 50% 50%;
+    -webkit-mask: url("/img/ico-minus-btn.svg") no-repeat 50% 50%;
+    mask: url("/img/ico-minus-btn.svg") no-repeat 50% 50%;
     background-color: #CACACA;
     height: 100%;
     width: 25px;
@@ -2270,8 +2270,8 @@ footer {
     position: absolute;
     right: 0;
     top: 0;
-    -webkit-mask: url("../img/ico-plus-btn.svg") no-repeat 50% 50%;
-    mask: url("../img/ico-plus-btn.svg") no-repeat 50% 50%;
+    -webkit-mask: url("/img/ico-plus-btn.svg") no-repeat 50% 50%;
+    mask: url("/img/ico-plus-btn.svg") no-repeat 50% 50%;
     background-color: #CACACA;
     height: 100%;
     width: 25px;
@@ -2318,7 +2318,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
       width: 80px;
       height: 30px;
       border-radius: 5px;
-      background: #BDC3C7 url("../img/ico-switch-no.svg") no-repeat 50px center; }
+      background: #BDC3C7 url("/img/ico-switch-no.svg") no-repeat 50px center; }
     .calculator__form__dropdown__switch__toggler + label:after {
       content: "";
       position: absolute;
@@ -2331,7 +2331,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
       border-top-left-radius: 5px;
       transition: all 0.3s; }
   .calculator__form__dropdown__switch__toggler:checked + label:before {
-    background: #34495E url("../img/ico-switch-yes.svg") no-repeat 15px center; }
+    background: #34495E url("/img/ico-switch-yes.svg") no-repeat 15px center; }
   .calculator__form__dropdown__switch__toggler:checked + label:after {
     left: 53px;
     background: #25B7D3;
@@ -2539,8 +2539,8 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     transition: all 0.4s ease; }
 
 .ico-edit {
-  -webkit-mask: url("../img/ico-edit.svg") no-repeat center;
-  mask: url("../img/ico-edit.svg") no-repeat center;
+  -webkit-mask: url("/img/ico-edit.svg") no-repeat center;
+  mask: url("/img/ico-edit.svg") no-repeat center;
   background-color: #B4C78E;
   width: 13px;
   height: 14px;
@@ -2693,37 +2693,37 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
       font-size: 11px; } }
 
 .ico-ambulance {
-  background: url("../img/ico-ambulance.svg") no-repeat center;
+  background: url("/img/ico-ambulance.svg") no-repeat center;
   width: 23px;
   height: 16px; }
 
 .ico-teeth {
-  background: url("../img/ico-teeth.svg") no-repeat center;
+  background: url("/img/ico-teeth.svg") no-repeat center;
   width: 23px;
   height: 16px; }
 
 .ico-fly {
-  background: url("../img/ico-fly.svg") no-repeat center;
+  background: url("/img/ico-fly.svg") no-repeat center;
   width: 23px;
   height: 16px; }
 
 .ico-scales {
-  background: url("../img/ico-scales.svg") no-repeat center;
+  background: url("/img/ico-scales.svg") no-repeat center;
   width: 23px;
   height: 16px; }
 
 .ico-caput {
-  background: url("../img/ico-caput.svg") no-repeat center;
+  background: url("/img/ico-caput.svg") no-repeat center;
   width: 23px;
   height: 16px; }
 
 .ico-pass {
-  background: url("../img/ico-pass.svg") no-repeat center;
+  background: url("/img/ico-pass.svg") no-repeat center;
   width: 23px;
   height: 16px; }
 
 .ico-message {
-  background: url("../img/ico-message.svg") no-repeat center;
+  background: url("/img/ico-message.svg") no-repeat center;
   width: 23px;
   height: 16px; }
 
@@ -2816,7 +2816,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     opacity: 0.7;
     cursor: pointer; }
   .calculator__form__filter__checkbox label:before {
-    background: url("../img/ico-form-checkbox.svg") no-repeat center;
+    background: url("/img/ico-form-checkbox.svg") no-repeat center;
     display: inline-block;
     height: 21px;
     width: 21px;
@@ -2825,7 +2825,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     margin-right: 10px;
     vertical-align: -6px; }
   .calculator__form__filter__checkbox input:checked + label:before {
-    background: url("../img/ico-form-checkbox--checked.svg") no-repeat center; }
+    background: url("/img/ico-form-checkbox--checked.svg") no-repeat center; }
 
 .calculator__form__contacts__checkbox {
   margin-top: 35px; }
@@ -2904,7 +2904,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   display: inline-block;
   padding: 12px 20px;
   padding-left: 75px;
-  background: rgba(255, 255, 255, 0.35) url("../img/ico-alert-red.svg") no-repeat 20px center;
+  background: rgba(255, 255, 255, 0.35) url("/img/ico-alert-red.svg") no-repeat 20px center;
   margin-top: -14px;
   margin-bottom: 15px; }
 
@@ -3035,19 +3035,19 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
       max-width: 300px; } }
 
 .calculator__form__contacts__input--ico-person {
-  background: white url("../img/ico-form-person.svg") no-repeat 95% center; }
+  background: white url("/img/ico-form-person.svg") no-repeat 95% center; }
 
 .calculator__form__contacts__input--ico-calendar {
-  background: white url("../img/ico-form-calendar.svg") no-repeat 95% center; }
+  background: white url("/img/ico-form-calendar.svg") no-repeat 95% center; }
 
 .calculator__form__contacts__input--ico-passport {
-  background: white url("../img/ico-form-passport.svg") no-repeat 95% center; }
+  background: white url("/img/ico-form-passport.svg") no-repeat 95% center; }
 
 .calculator__form__contacts__input--ico-phone {
-  background: white url("../img/ico-form-phone.svg") no-repeat 95% center; }
+  background: white url("/img/ico-form-phone.svg") no-repeat 95% center; }
 
 .calculator__form__contacts__input--ico-email {
-  background: white url("../img/ico-form-email.svg") no-repeat 95% center; }
+  background: white url("/img/ico-form-email.svg") no-repeat 95% center; }
 
 #calc__go-to__prev-step {
   border-bottom: 1px dashed white;
@@ -3115,7 +3115,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
       left: 15px;
       display: inline-block;
       border-radius: 50%;
-      background: white url("../img/ico-radio-btn-unactive.svg") no-repeat center;
+      background: white url("/img/ico-radio-btn-unactive.svg") no-repeat center;
       border: 1px solid #E3E6E7;
       width: 24px;
       height: 24px;
@@ -3130,7 +3130,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     opacity: 1; }
   .radio-buttons__btn input:checked + label:before {
     border-color: #79C930;
-    background: white url("../img/ico-radio-btn-active.svg") no-repeat center; }
+    background: white url("/img/ico-radio-btn-active.svg") no-repeat center; }
 
 .heading {
   font-size: 32px;
@@ -3316,7 +3316,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
       font-size: 14px; } }
 
 .ico-tooltip {
-  background: url("../img/ico-help.svg") no-repeat 0 0;
+  background: url("/img/ico-help.svg") no-repeat 0 0;
   width: 17px;
   height: 17px;
   cursor: pointer;
@@ -3399,7 +3399,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   #mailer .calculator__form__filter__checkbox {
     margin-right: 10px; }
   #mailer .mfp-close {
-    background: url("../img/modal-close.svg") no-repeat center !important;
+    background: url("/img/modal-close.svg") no-repeat center !important;
     font-size: 0 !important;
     top: 30px;
     right: 25px; }
@@ -3431,7 +3431,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   #visa2-modal-passport .visa2__modal__text {
     line-height: 1.2em; }
   #visa2-modal-passport .mfp-close {
-    background: url("../img/modal-close.svg") no-repeat center !important;
+    background: url("/img/modal-close.svg") no-repeat center !important;
     font-size: 0 !important;
     top: 30px;
     right: 25px; }
@@ -3981,7 +3981,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 .dropzone {
   min-height: 80px;
   border: 2px dashed white;
-  background: transparent url("../img/dropzone-upload.svg") no-repeat 15px center;
+  background: transparent url("/img/dropzone-upload.svg") no-repeat 15px center;
   padding: 10px;
   margin-top: 30px;
   -webkit-transition: all 0.4s ease;
@@ -4406,10 +4406,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
       font-size: 14px;
       max-height: 20px;
       overflow: hidden; } }
-  @media (max-width: 47.99em) {
-    .regular-input label {
-      overflow: visible;
-      max-height: 50px; } }
   .regular-input label.block {
     display: block; }
 .regular-input .calculator__form__input--ico-car {
@@ -4481,7 +4477,12 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 
 .calculator__form__input__car-reg-num__drop__wrap {
   position: relative; }
+.calculator__form__input__car-reg-num__drop__wrap .dropdown-menu {
+	max-height:200px;
+	overflow:scroll;
+	overflow-x:hidden;
 
+}
 .calculator__form__input__car-reg-num__drop__region {
   position: absolute;
   bottom: 2px;
@@ -4489,21 +4490,21 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   color: rgba(48, 48, 48, 0.7); }
 
 .ico-rus-reg-num {
-  background: url("../img/ico-rus-reg-num.svg") no-repeat center;
+  background: url("/img/ico-rus-reg-num.svg") no-repeat center;
   width: 11px;
   height: 7px;
   margin-left: 3px; }
 
 .calculator__form__contacts__input--ico-loc {
-  background-image: url("../img/ico-form-input-loc.svg");
+  background-image: url("/img/ico-form-input-loc.svg");
   background-repeat: no-repeat; }
   .calculator__form__contacts__input--ico-loc.input--dropdown {
-    background-image: url("../img/ico-form-input-loc.svg"), url("../img/ico-form-dropdown-outline.svg");
+    background-image: url("/img/ico-form-input-loc.svg"), url("/img/ico-form-dropdown-outline.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: 5% center, 95% center;
     padding-left: 60px; }
     .calculator__form__contacts__input--ico-loc.input--dropdown.active {
-      background-image: url("../img/ico-form-input-loc.svg"), url("../img/ico-form-dropdown-outline-active.svg"); }
+      background-image: url("/img/ico-form-input-loc.svg"), url("/img/ico-form-dropdown-outline-active.svg"); }
 
 #delivery-offices {
   display: none; }
@@ -4677,7 +4678,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     vertical-align: 3px; }
 
 .ico-plus {
-  background: url("../img/ico-plus-oval.svg") no-repeat center;
+  background: url("/img/ico-plus-oval.svg") no-repeat center;
   width: 15px;
   height: 15px;
   margin-right: 10px; }
@@ -4688,7 +4689,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     margin-top: 10px;
     color: #303030;
     background-color: rgba(255, 255, 255, 0.3);
-    background-image: url("../img/dropzone-upload-dark.svg"); }
+    background-image: url("/img/dropzone-upload-dark.svg"); }
     .osago2__uploaders .dropzone .dz-message {
       color: #303030; }
       .osago2__uploaders .dropzone .dz-message span {
@@ -4725,11 +4726,11 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
         height: 35px;
         width: 35px; } }
   .main-slider .owl-nav .owl-prev {
-    background-image: url("../img/owl-prev.svg");
+    background-image: url("/img/owl-prev.svg");
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px; }
   .main-slider .owl-nav .owl-next {
-    background-image: url("../img/owl-next.svg");
+    background-image: url("/img/owl-next.svg");
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     margin-left: -1px; }
@@ -4968,7 +4969,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
         padding-bottom: 3px; } }
 
 .ico-tick {
-  background: url("../img/ico-tick.svg") no-repeat center;
+  background: url("/img/ico-tick.svg") no-repeat center;
   width: 24px;
   height: 24px; }
   @media (max-width: 61.99em) {
@@ -5070,25 +5071,25 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     display: inline-block; }
 
 .ico-pricing-doc {
-  background-image: url("../img/ico-pricing-doc.svg"); }
+  background-image: url("/img/ico-pricing-doc.svg"); }
 
 .ico-pricing-photo {
-  background-image: url("../img/ico-pricing-photo.svg"); }
+  background-image: url("/img/ico-pricing-photo.svg"); }
 
 .ico-pricing-insurance {
-  background-image: url("../img/ico-pricing-insurance.svg"); }
+  background-image: url("/img/ico-pricing-insurance.svg"); }
 
 .ico-pricing-consul {
-  background-image: url("../img/ico-pricing-consul.svg"); }
+  background-image: url("/img/ico-pricing-consul.svg"); }
 
 .ico-pricing-podacha {
-  background-image: url("../img/ico-pricing-podacha.svg"); }
+  background-image: url("/img/ico-pricing-podacha.svg"); }
 
 .ico-pricing-sbor {
-  background-image: url("../img/ico-pricing-sbor.svg"); }
+  background-image: url("/img/ico-pricing-sbor.svg"); }
 
 .ico-pricing-delivery {
-  background-image: url("../img/ico-pricing-delivery.svg"); }
+  background-image: url("/img/ico-pricing-delivery.svg"); }
 
 .mainpage-contacts #map {
   height: 380px; }
@@ -5135,7 +5136,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     border-bottom: none; }
 
 .ico-contact-sky {
-  background: url("../img/ico-contact-sky.svg") no-repeat center;
+  background: url("/img/ico-contact-sky.svg") no-repeat center;
   width: 41px;
   height: 32px;
   position: relative; }
@@ -5353,16 +5354,16 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
         line-height: 17px; } }
 
 .ico-about-price {
-  background-image: url("../img/ico-about-price.svg"); }
+  background-image: url("/img/ico-about-price.svg"); }
 
 .ico-about-delivery {
-  background-image: url("../img/ico-about-delivery.svg"); }
+  background-image: url("/img/ico-about-delivery.svg"); }
 
 .ico-about-offices {
-  background-image: url("../img/ico-about-offices.svg"); }
+  background-image: url("/img/ico-about-offices.svg"); }
 
 .ico-about-partners {
-  background-image: url("../img/ico-about-partners.svg"); }
+  background-image: url("/img/ico-about-partners.svg"); }
 
 @media (max-width: 47.99em) {
   .popup-gallery .col-sm-4 {
@@ -5382,7 +5383,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     content: " ";
     width: 100%;
     height: 100%;
-    background: rgba(121, 201, 48, 0.6) url("../img/image-zoom.svg") no-repeat bottom center;
+    background: rgba(121, 201, 48, 0.6) url("/img/image-zoom.svg") no-repeat bottom center;
     opacity: 0;
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -5479,19 +5480,19 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     vertical-align: -3px; }
 
 .ico-contacts-parking {
-  background-image: url("../img/ico-contacts-parking.svg"); }
+  background-image: url("/img/ico-contacts-parking.svg"); }
 
 .ico-contacts-card {
-  background-image: url("../img/ico-contacts-card.svg"); }
+  background-image: url("/img/ico-contacts-card.svg"); }
 
 .ico-contacts-calendar {
-  background-image: url("../img/ico-contacts-calendar.svg"); }
+  background-image: url("/img/ico-contacts-calendar.svg"); }
 
 .ico-contacts-metro {
-  background-image: url("../img/ico-contacts-metro.svg"); }
+  background-image: url("/img/ico-contacts-metro.svg"); }
 
 .ico-contacts-dinner {
-  background-image: url("../img/ico-contacts-dinner.svg"); }
+  background-image: url("/img/ico-contacts-dinner.svg"); }
 
 .coordinates__row {
   margin-bottom: 20px; }
@@ -5521,7 +5522,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   margin-right: 30px; }
 
 .not-found__wrap {
-  background: url("../img/404-wrap.svg") no-repeat center bottom;
+  background: url("/img/404-wrap.svg") no-repeat center bottom;
   min-height: 325px;
   overflow: hidden; }
   @media (max-width: 61.99em) {
@@ -5529,7 +5530,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
       max-width: 100%; } }
 
 .not-found__hand {
-  background: url("../img/404-hand.svg") no-repeat 40% center;
+  background: url("/img/404-hand.svg") no-repeat 40% center;
   width: 100%;
   height: 325px;
   vertical-align: -8px; }
@@ -5665,28 +5666,28 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
         padding-left: 45px; } }
 
 .ico-finland {
-  background-image: url("../img/ico-co-finland.svg"); }
+  background-image: url("/img/ico-co-finland.svg"); }
 
 .ico-italy {
-  background-image: url("../img/ico-co-italy.svg"); }
+  background-image: url("/img/ico-co-italy.svg"); }
 
 .ico-lithuania {
-  background-image: url("../img/ico-co-lithuania.svg"); }
+  background-image: url("/img/ico-co-lithuania.svg"); }
 
 .ico-estonia {
-  background-image: url("../img/ico-co-estonia.svg"); }
+  background-image: url("/img/ico-co-estonia.svg"); }
 
 .ico-usa {
-  background-image: url("../img/ico-co-usa.svg"); }
+  background-image: url("/img/ico-co-usa.svg"); }
 
 .ico-england {
-  background-image: url("../img/ico-co-england.svg"); }
+  background-image: url("/img/ico-co-england.svg"); }
 
 .ico-holland {
-  background-image: url("../img/ico-co-netherlands.svg"); }
+  background-image: url("/img/ico-co-netherlands.svg"); }
 
 .ico-spain {
-  background-image: url("../img/ico-co-spain.svg"); }
+  background-image: url("/img/ico-co-spain.svg"); }
 
 .main-slider.visa-offline .main-slider__image {
   min-height: 300px; }
@@ -5763,16 +5764,16 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   line-height: 17px; }
 
 .ico-quick-doc {
-  background-image: url("../img/ico-quick-doc.svg"); }
+  background-image: url("/img/ico-quick-doc.svg"); }
 
 .ico-quick-time {
-  background-image: url("../img/ico-quick-time.svg"); }
+  background-image: url("/img/ico-quick-time.svg"); }
 
 .ico-quick-photo {
-  background-image: url("../img/ico-quick-photo.svg"); }
+  background-image: url("/img/ico-quick-photo.svg"); }
 
 .ico-quick-sky {
-  background-image: url("../img/ico-quick-sky.svg"); }
+  background-image: url("/img/ico-quick-sky.svg"); }
 
 .calculator__form__insurance-price {
   font-size: 18px;
@@ -5809,17 +5810,17 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     background-repeat: no-repeat;
     background-position: center; }
   .visa-form-help__icons .ico-pricing-doc {
-    background-image: url("../img/ico-pricing-doc-white.svg"); }
+    background-image: url("/img/ico-pricing-doc-white.svg"); }
   .visa-form-help__icons .ico-pricing-photo {
-    background-image: url("../img/ico-pricing-photo-white.svg"); }
+    background-image: url("/img/ico-pricing-photo-white.svg"); }
   .visa-form-help__icons .ico-pricing-insurance {
-    background-image: url("../img/ico-pricing-insurance-white.svg"); }
+    background-image: url("/img/ico-pricing-insurance-white.svg"); }
   .visa-form-help__icons .ico-pricing-consul {
-    background-image: url("../img/ico-pricing-consul-white.svg"); }
+    background-image: url("/img/ico-pricing-consul-white.svg"); }
   .visa-form-help__icons .ico-pricing-podacha {
-    background-image: url("../img/ico-pricing-podacha-white.svg"); }
+    background-image: url("/img/ico-pricing-podacha-white.svg"); }
   .visa-form-help__icons .ico-pricing-sbor {
-    background-image: url("../img/ico-pricing-sbor-white.svg"); }
+    background-image: url("/img/ico-pricing-sbor-white.svg"); }
   .visa-form-help__icons .visa-form-help__icon-row {
     margin-bottom: 5px;
     position: relative; }
@@ -5852,10 +5853,37 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     color: white;
     text-align: left;
     margin-bottom: 10px; }
+.osago__tab {
+  font-size: 12px;
+  text-align: center;
+  border-right: 1px solid #D5D9DB;
+  background: rgba(255, 255, 255, 0.3);
+  width:58px;
+  float:left;
+  padding: 7px 0px 3px 0px;
+  cursor: pointer; }
+  .osago__tab span {
+    padding-top: 5px;
+    display: inline-block;
+    line-height: 1.2em; }
+  .osago__tab.active {
+    color: white;
+    background: rgba(0, 0, 0, 0.3); }
+    .osago__tab.active .ico-visa-folder {
+      background-image: url("/img/ico-visa-usertab.svg"); }
+      .osago__tab.active .ico-visa-folder.ready {
+        background-image: url("/img/ico-visa-usertab-ready.svg"); }
+  .osago__tab:first-child {
+    border-top-left-radius: 5px; }
+  .osago__tab:last-child {
+    border-right: none;
+    border-top-right-radius: 5px; }
+
 
 .visa__tabs {
   float: left;
-  width: 70px; }
+  width: 70px;
+  position: absolute;  }
 
 .visa__tab {
   font-size: 12px;
@@ -5872,9 +5900,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     color: white;
     background: rgba(0, 0, 0, 0.3); }
     .visa__tab.active .ico-visa-folder {
-      background-image: url("../img/ico-visa-usertab.svg"); }
+      background-image: url("/img/ico-visa-usertab.svg"); }
       .visa__tab.active .ico-visa-folder.ready {
-        background-image: url("../img/ico-visa-usertab-ready.svg"); }
+        background-image: url("/img/ico-visa-usertab-ready.svg"); }
   .visa__tab:first-child {
     border-top-left-radius: 5px; }
   .visa__tab:last-child {
@@ -5882,14 +5910,28 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     border-bottom-left-radius: 5px; }
 
 .ico-visa-folder {
-  background: url("../img/ico-visa-usertab-black.svg") no-repeat center;
+  background: url("/img/ico-visa-usertab-black.svg") no-repeat center;
   width: 26px;
   height: 26px; }
   .ico-visa-folder.ready {
-    background-image: url("../img/ico-visa-usertab-ready.svg");
+    background-image: url("/img/ico-visa-usertab-ready.svg");
     width: 30px;
     height: 30px; }
-
+.visa2__wrap .adult-only,.visa2__wrap .child-only {
+	display:none;
+}
+.visa2__wrap.adult .adult-only {
+ display:block;
+}
+.visa2__wrap.child .child-only {
+ display:block;
+}
+.osago__tab__driver {
+	display:none;
+}
+.osago__tab__driver.active {
+	display:block;
+}
 .visa2__wrap {
   background: rgba(0, 0, 0, 0.3);
   border-top-right-radius: 5px;
@@ -5913,6 +5955,21 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 .toggle-maden-name, .toggle-have-schengen, .toggle-occupation-work, .toggle-occupation-vuz, .toggle-occupation-school {
   display: none; }
 
+.visa2__uploaders__wrap {
+	display:none;
+}
+.visa2__uploaders__wrap .adult-only,.visa2__uploaders__wrap .child-only {
+	display:none;
+}
+.visa2__uploaders__wrap.adult .adult-only {
+ display:block;
+}
+.visa2__uploaders__wrap.child .child-only {
+ display:block;
+}
+.visa2__uploaders__wrap.active {
+	display:block;
+}
 .visa2__uploaders {
   background: rgba(0, 0, 0, 0.3);
   padding: 25px 25px 10px 25px;
@@ -5937,7 +5994,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     margin-right: 5px; }
 
 .ico-upload-demo {
-  background: url("../img/ico-upload-demo.svg") no-repeat center;
+  background: url("/img/ico-upload-demo.svg") no-repeat center;
   width: 20px;
   height: 20px;
   -webkit-transition: all 0.4s ease;
@@ -5969,16 +6026,19 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 .visa2__contacts {
   background: rgba(0, 0, 0, 0.3);
   padding: 25px 25px 10px 25px;
-  color: white;
+
   margin-top: 65px;
   border-radius: 5px; }
+  .visa2__contacts label {
+	color: white;
+  }
   .visa2__contacts .calculator__form__separator {
     margin-bottom: 20px;
     height: 1px;
     margin-top: 25px; }
 
 .ico-visa-pdf {
-  background: url("../img/ico-visa-pdf.svg") no-repeat center;
+  background: url("/img/ico-visa-pdf.svg") no-repeat center;
   width: 31px;
   height: 31px;
   margin-left: 10px; }
@@ -6018,7 +6078,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     text-transform: uppercase; }
 
 .ico-price-delivery {
-  background: url("../img/ico-price-delivery.svg") no-repeat center;
+  background: url("/img/ico-price-delivery.svg") no-repeat center;
   width: 60px;
   height: 60px;
   position: absolute;
@@ -6134,7 +6194,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
       background: #E06A56; }
 
 .ico-show-more {
-  background: url("../img/ico-more-news.svg") no-repeat center;
+  background: url("/img/ico-more-news.svg") no-repeat center;
   width: 26px;
   height: 25px;
   margin-right: 10px;
@@ -6186,13 +6246,13 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   text-align: right; }
 
 .ico-prev {
-  background: url("../img/ico-prev.svg") no-repeat center;
+  background: url("/img/ico-prev.svg") no-repeat center;
   width: 20px;
   height: 12px;
   margin-right: 10px; }
 
 .ico-next {
-  background: url("../img/ico-next.svg") no-repeat center;
+  background: url("/img/ico-next.svg") no-repeat center;
   width: 20px;
   height: 12px;
   margin-left: 10px; }
@@ -6209,7 +6269,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
       animation-timing-function: linear; }
 
 .ico-news-loader {
-  background: url("../img/ico-news-loader.svg") no-repeat center;
+  background: url("/img/ico-news-loader.svg") no-repeat center;
   width: 50px;
   height: 50px; }
 
@@ -6264,9 +6324,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     height: 45px;
     padding: 0px 20px;
     border-radius: 4px;
-    background: url("../img/form-regular-input-dropdown.svg") no-repeat 95% center; }
+    background: url("/img/form-regular-input-dropdown.svg") no-repeat 95% center; }
     .contact-form__form .calculator__form__input.active {
-      background: url("../img/form-regular-input-dropdown2.svg") no-repeat 95% center; }
+      background: url("/img/form-regular-input-dropdown2.svg") no-repeat 95% center; }
     .contact-form__form .calculator__form__input input {
       height: 45px;
       padding-top: 0;
@@ -6300,7 +6360,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
   position: relative;
   display: inline-block;
   border: 1px solid #D5D9DB;
-  background: white url("../img/form-attachment.svg") no-repeat 10px center;
+  background: white url("/img/form-attachment.svg") no-repeat 10px center;
   border-radius: 4px;
   cursor: pointer;
   -webkit-transition: all 0.4s ease;
@@ -6353,16 +6413,16 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     margin-bottom: 7px; }
 
 .ico-help-contact {
-  background-image: url("../img/ico-help-contact.svg"); }
+  background-image: url("/img/ico-help-contact.svg"); }
 
 .ico-help-pays {
-  background-image: url("../img/ico-help-pays.svg"); }
+  background-image: url("/img/ico-help-pays.svg"); }
 
 .ico-help-payments {
-  background-image: url("../img/ico-help-payments.svg"); }
+  background-image: url("/img/ico-help-payments.svg"); }
 
 .ico-help-refund {
-  background-image: url("../img/ico-help-refund.svg"); }
+  background-image: url("/img/ico-help-refund.svg"); }
 
 .confirm {
   padding-top: 50px;
@@ -6371,7 +6431,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 .ico-confirm {
   width: 220px;
   height: 220px;
-  background: url("../img/ico-confirm.svg") no-repeat center; }
+  background: url("/img/ico-confirm.svg") no-repeat center; }
   @media (max-width: 47.99em) {
     .ico-confirm {
       width: 180px;
@@ -6439,12 +6499,6 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
       .confirm__mailer .subscribe__control {
         width: 100%; } }
 
-.jGrowl-notification {
-  background-image: none !important;
-  color: white !important;
-  border-color: transparent !important;
-  font-size: 16px !important; }
-
 .flag-icon-background, .flag-icon {
   background-size: contain;
   background-position: 50%;
@@ -6462,84 +6516,84 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
     width: 1em; }
 
 .flag-icon-ae {
-  background-image: url(../img/flags/4x3/ae.svg); }
+  background-image: url(/img/flags/4x3/ae.svg); }
 
 .flag-icon-bg {
-  background-image: url(../img/flags/4x3/bg.svg); }
+  background-image: url(/img/flags/4x3/bg.svg); }
 
 .flag-icon-cn {
-  background-image: url(../img/flags/4x3/cn.svg); }
+  background-image: url(/img/flags/4x3/cn.svg); }
 
 .flag-icon-cu {
-  background-image: url(../img/flags/4x3/cu.svg); }
+  background-image: url(/img/flags/4x3/cu.svg); }
 
 .flag-icon-cy {
-  background-image: url(../img/flags/4x3/cy.svg); }
+  background-image: url(/img/flags/4x3/cy.svg); }
 
 .flag-icon-cz {
-  background-image: url(../img/flags/4x3/cz.svg); }
+  background-image: url(/img/flags/4x3/cz.svg); }
 
 .flag-icon-do {
-  background-image: url(../img/flags/4x3/do.svg); }
+  background-image: url(/img/flags/4x3/do.svg); }
 
 .flag-icon-eg {
-  background-image: url(../img/flags/4x3/eg.svg); }
+  background-image: url(/img/flags/4x3/eg.svg); }
 
 .flag-icon-es {
-  background-image: url(../img/flags/4x3/es.svg); }
+  background-image: url(/img/flags/4x3/es.svg); }
 
 .flag-icon-gr {
-  background-image: url(../img/flags/4x3/gr.svg); }
+  background-image: url(/img/flags/4x3/gr.svg); }
 
 .flag-icon-hr {
-  background-image: url(../img/flags/4x3/hr.svg); }
+  background-image: url(/img/flags/4x3/hr.svg); }
 
 .flag-icon-id {
-  background-image: url(../img/flags/4x3/id.svg); }
+  background-image: url(/img/flags/4x3/id.svg); }
 
 .flag-icon-il {
-  background-image: url(../img/flags/4x3/il.svg); }
+  background-image: url(/img/flags/4x3/il.svg); }
 
 .flag-icon-in {
-  background-image: url(../img/flags/4x3/in.svg); }
+  background-image: url(/img/flags/4x3/in.svg); }
 
 .flag-icon-it {
-  background-image: url(../img/flags/4x3/it.svg); }
+  background-image: url(/img/flags/4x3/it.svg); }
 
 .flag-icon-lk {
-  background-image: url(../img/flags/4x3/lk.svg); }
+  background-image: url(/img/flags/4x3/lk.svg); }
 
 .flag-icon-ma {
-  background-image: url(../img/flags/4x3/ma.svg); }
+  background-image: url(/img/flags/4x3/ma.svg); }
 
 .flag-icon-mt {
-  background-image: url(../img/flags/4x3/mt.svg); }
+  background-image: url(/img/flags/4x3/mt.svg); }
 
 .flag-icon-mv {
-  background-image: url(../img/flags/4x3/mv.svg); }
+  background-image: url(/img/flags/4x3/mv.svg); }
 
 .flag-icon-mx {
-  background-image: url(../img/flags/4x3/mx.svg); }
+  background-image: url(/img/flags/4x3/mx.svg); }
 
 .flag-icon-pt {
-  background-image: url(../img/flags/4x3/pt.svg); }
+  background-image: url(/img/flags/4x3/pt.svg); }
 
 .flag-icon-ru {
-  background-image: url(../img/flags/4x3/ru.svg); }
+  background-image: url(/img/flags/4x3/ru.svg); }
 
 .flag-icon-sc {
-  background-image: url(../img/flags/4x3/sc.svg); }
+  background-image: url(/img/flags/4x3/sc.svg); }
 
 .flag-icon-th {
-  background-image: url(../img/flags/4x3/th.svg); }
+  background-image: url(/img/flags/4x3/th.svg); }
 
 .flag-icon-tn {
-  background-image: url(../img/flags/4x3/tn.svg); }
+  background-image: url(/img/flags/4x3/tn.svg); }
 
 .flag-icon-tr {
-  background-image: url(../img/flags/4x3/tr.svg); }
+  background-image: url(/img/flags/4x3/tr.svg); }
 
 .flag-icon-vn {
-  background-image: url(../img/flags/4x3/vn.svg); }
+  background-image: url(/img/flags/4x3/vn.svg); }
 
 /*# sourceMappingURL=style.css.map */
