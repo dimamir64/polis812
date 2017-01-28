@@ -7,6 +7,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>POLIS 812 - Контакты </title>
+  <meta name=“robots” content=“noindex,nofollow”>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
 	<link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />
@@ -15,17 +16,17 @@
 	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	
+
 	<script type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
 
 	<!-- Scripts can be moved to the bottom -->
-	<script type="text/javascript" src="js/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript" src="js/wow.min.js"></script>
-	<script type="text/javascript" src="js/moment.js"></script>	
-	<script type="text/javascript" src="js/daterangepicker.js"></script>	
+	<script type="text/javascript" src="js/moment.js"></script>
+	<script type="text/javascript" src="js/daterangepicker.js"></script>
 	<script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
@@ -51,7 +52,7 @@
 					</div>
 					<div class="col-sm-6 col-md-4 header-top__region text-right">
 						<div class="dropdown">
-							Ваш регион: 
+							Ваш регион:
 							<a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
 							<span id="selected-region">Санкт-Петербург</span>
 							<span class="caret"></span>
@@ -165,12 +166,12 @@ $(document).ready(function(){
 	            center: [59.9482,30.3056],
 	            zoom: 10,
 	            controls: ['zoomControl'],
-				
-	        }); 
+
+	        });
 
 			var myGeoObjects = [];
 				myGeoObjects[0] = new ymaps.Placemark([59.8796,30.2620],{
-	                clusterCaption: 'Метро "Кировский завод"', 
+	                clusterCaption: 'Метро "Кировский завод"',
 	                //balloonContentBody: 'Текст в балуне',
 	                },{
 	                // Необходимо указать данный тип макета.
@@ -182,9 +183,9 @@ $(document).ready(function(){
 	                // её «ножки» (точки привязки).
 	                iconImageOffset: [-3, -42]
 	            });
-	        
+
 				myGeoObjects[1] = new ymaps.Placemark([59.9893,30.2552],{
-					clusterCaption: 'Метро "Старая деревня"', 
+					clusterCaption: 'Метро "Старая деревня"',
 					//balloonContentBody: 'Текст в балуне',
 					},{
 					// Необходимо указать данный тип макета.
@@ -196,9 +197,9 @@ $(document).ready(function(){
 					// её «ножки» (точки привязки).
 					iconImageOffset: [-3, -42]
 	            });
-	        
+
 				myGeoObjects[2] = new ymaps.Placemark([59.8332,30.3493],{
-	                clusterCaption: ' Метро "Звёздная"', 
+	                clusterCaption: ' Метро "Звёздная"',
 					//balloonContentBody: 'Текст в балуне',
 	                },{
 	                // Необходимо указать данный тип макета.
@@ -210,9 +211,9 @@ $(document).ready(function(){
 	                // её «ножки» (точки привязки).
 	                iconImageOffset: [-16, -42]
 	            });
-				
+
 				myGeoObjects[3] = new ymaps.Placemark([60.0372,30.3218],{
-	                clusterCaption: 'Метро "Озерки"', 
+	                clusterCaption: 'Метро "Озерки"',
 					//balloonContentBody: 'Текст в балуне',
 	                },{
 	                // Необходимо указать данный тип макета.
@@ -224,9 +225,9 @@ $(document).ready(function(){
 	                // её «ножки» (точки привязки).
 	                iconImageOffset: [-16, -42]
 	            });
-				
+
 				myGeoObjects[4] = new ymaps.Placemark([55.7613,37.6630],{
-	                clusterCaption: 'Нижний Сусальный переулок дом 5', 
+	                clusterCaption: 'Нижний Сусальный переулок дом 5',
 					//balloonContentBody: 'Текст в балуне',
 	                },{
 	                // Необходимо указать данный тип макета.
@@ -238,13 +239,13 @@ $(document).ready(function(){
 	                // её «ножки» (точки привязки).
 	                iconImageOffset: [-16, -42]
 	            });
-	        
+
 				var clusterIcons=[{
 						href:'/images/pointer.png',
 						size:[31,40],
 						offset:[0,0]
 				}];
-	        
+
 				var clusterer = new ymaps.Clusterer({
 					clusterDisableClickZoom: false,
 					clusterOpenBalloonOnClick: false,
@@ -252,7 +253,7 @@ $(document).ready(function(){
 					clusterBalloonContentLayout: 'cluster#balloonCarousel',
 					// Устанавливаем собственный макет.
 					//clusterBalloonItemContentLayout: customItemContentLayout,
-					// Устанавливаем режим открытия балуна. 
+					// Устанавливаем режим открытия балуна.
 					// В данном примере балун никогда не будет открываться в режиме панели.
 					clusterBalloonPanelMaxMapArea: 0,
 					// Устанавливаем размеры макета контента балуна (в пикселях).
@@ -284,21 +285,21 @@ $(document).ready(function(){
 				<div class="col-sm-12">
 					<div class="heading text-center">Контактная информация</div>
 				</div>
-				
+
 				<div class="col-sm-12">
 					<div class="contacts__switch">
 						<a href="#" class="active" data-region="spb">Санкт-Петербург</a>
 						<a href="#" data-region="msk">Москва</a>
 					</div>
-				
+
 
 					<div class="row" id="contacts-spb">
 						<div class="col-sm-6">
 							<div class="mainpage-contacts__office">
 								<div class="mainpage-contacts__icon">
-									<i class="ico ico-contact-sky"><span>1</span></i>	
+									<i class="ico ico-contact-sky"><span>1</span></i>
 								</div>
-								
+
 								<div class="mainpage-contacts__content">
 									<div class="mainpage-contacts__name">Метро «Кировский завод»</div>
 									<i class="ico ico-metro ico-metro--red"></i>
@@ -342,9 +343,9 @@ $(document).ready(function(){
 
 							<div class="mainpage-contacts__office">
 								<div class="mainpage-contacts__icon">
-									<i class="ico ico-contact-sky"><span>3</span></i>	
+									<i class="ico ico-contact-sky"><span>3</span></i>
 								</div>
-								
+
 								<div class="mainpage-contacts__content">
 									<div class="mainpage-contacts__name">Метро «Звёздная»</div>
 									<i class="ico ico-metro ico-metro--blue"></i>
@@ -390,9 +391,9 @@ $(document).ready(function(){
 						<div class="col-sm-6">
 							<div class="mainpage-contacts__office">
 								<div class="mainpage-contacts__icon">
-									<i class="ico ico-contact-sky"><span>2</span></i>	
+									<i class="ico ico-contact-sky"><span>2</span></i>
 								</div>
-								
+
 								<div class="mainpage-contacts__content">
 									<div class="mainpage-contacts__name">Метро «Старая деревня»</div>
 									<i class="ico ico-metro ico-metro--purple"></i>
@@ -436,9 +437,9 @@ $(document).ready(function(){
 
 							<div class="mainpage-contacts__office">
 								<div class="mainpage-contacts__icon">
-									<i class="ico ico-contact-sky"><span>4</span></i>	
+									<i class="ico ico-contact-sky"><span>4</span></i>
 								</div>
-								
+
 								<div class="mainpage-contacts__content">
 									<div class="mainpage-contacts__name">Метро «Озерки»</div>
 									<i class="ico ico-metro ico-metro--blue"></i>
@@ -486,9 +487,9 @@ $(document).ready(function(){
 						<div class="col-sm-6">
 							<div class="mainpage-contacts__office">
 								<div class="mainpage-contacts__icon">
-									<i class="ico ico-contact-sky"><span>1</span></i>	
+									<i class="ico ico-contact-sky"><span>1</span></i>
 								</div>
-								
+
 								<div class="mainpage-contacts__content">
 									<div class="mainpage-contacts__name">Метро «Курская»</div>
 									<i class="ico ico-metro" style="background-color: brown"></i>
@@ -686,8 +687,8 @@ $(document).ready(function(){
 					<div class="press__link">
 						<a href="#">Подробнее на <span>dp.ru</span></a>
 					</div>
-				</div>	
-				</div>	
+				</div>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-12 text-center">
@@ -702,9 +703,9 @@ $(document).ready(function(){
 								<img src="images/testimonial.png" alt="" class="img-responsive">
 							</div>
 							<div class="testinmonial__content">
-								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно! 
+								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно!
 							</div>
-						</div>	
+						</div>
 						<div class="testimonial">
 							<div class="testimonial__image">
 								<img src="images/testimonial.png" alt="" class="img-responsive">
@@ -712,7 +713,7 @@ $(document).ready(function(){
 							<div class="testinmonial__content">
 								Пользуюсь услугами "Полис 812" уже несколько лет. Еще с тех пор когда их офис был на ул. Сикейроса 6 корп.1 Делаю у них финские визы и страховки. Цены одни из самых низких по городу.Девушки работающие там всегда помогут в возникающих вопросах.
 							</div>
-						</div>	
+						</div>
 						<div class="testimonial">
 							<div class="testimonial__image">
 								<img src="images/testimonial.png" alt="" class="img-responsive">
@@ -720,7 +721,7 @@ $(document).ready(function(){
 							<div class="testinmonial__content">
 								Заказывали страховку для визы через интернет. Все быстро и удобно. Спасибо. Все лучшие👍
 							</div>
-						</div>	
+						</div>
 						<div class="testimonial">
 							<div class="testimonial__image">
 								<img src="images/testimonial.png" alt="" class="img-responsive">
@@ -728,23 +729,23 @@ $(document).ready(function(){
 							<div class="testinmonial__content">
 								Пользуюсь Вашими услугами уже не первый раз. Оформление страховки занимает всего пару минут, присланный на эл. почту полис никаких вопросов в посольстве не вызывает. Страховки выгоднее чем у Вас я не нашел, да еще и с промокодом
 							</div>
-						</div>	
+						</div>
 						<div class="testimonial">
 							<div class="testimonial__image">
 								<img src="images/testimonial.png" alt="" class="img-responsive">
 							</div>
 							<div class="testinmonial__content">
-								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно! 
+								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно!
 							</div>
-						</div>	
+						</div>
 						<div class="testimonial">
 							<div class="testimonial__image">
 								<img src="images/testimonial.png" alt="" class="img-responsive">
 							</div>
 							<div class="testinmonial__content">
-								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно! 
+								Уже не первый раз покупаю страховку онлайн у этой компании. Один раз была ошибка, но ее поправили минуты за 3 после обращения. Очень оперативно!
 							</div>
-						</div>		
+						</div>
 					</div>
 				</div>
 			</div>
